@@ -67,4 +67,9 @@ public class Ingredient {
 		this.amount = amount;
 	}
 
+	@Override
+	public String toString() {
+		return "Ingredient [name=" + name + ", measurement=" + measurement + ", amount=" + amount + "]";
+	}
+
 }

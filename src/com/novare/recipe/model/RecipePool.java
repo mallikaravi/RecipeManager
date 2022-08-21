@@ -12,7 +12,6 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "RecipePool")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class RecipePool implements Serializable {
-
 	/**
 	 * 
 	 */
@@ -30,6 +29,11 @@ public class RecipePool implements Serializable {
 
 	public void addRecipe(Recipe recipe) {
 		this.pool.add(recipe);
+	}
+
+	@Override
+	public String toString() {
+		return "RecipePool [listOfRecipes=" + pool + "]";
 	}
 
 }
