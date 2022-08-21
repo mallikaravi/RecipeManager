@@ -14,6 +14,15 @@ public class DieticianServiceImpl implements IDieticianService {
 
 	@Override
 	public Recipe createRecipe(Recipe recipe) {
+		return null;
+	}
+
+	@Override
+	public void handleOption(int selectedOption) {
+	}
+
+	@Override
+	public List<String> getMenuOptions() {
 		// TODO Auto-generated method stub
 		return null;
 	}

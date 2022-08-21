@@ -50,7 +50,7 @@ public class PrintHandler {
 	 * 
 	 * @param userInput, user entered value in the terminal @return, integer value
 	 */
-	public int readInput(String userInput) {
+	public static int readInput(String userInput) {
 		try {
 			return Integer.parseInt(userInput);
 		} catch (NumberFormatException e) {

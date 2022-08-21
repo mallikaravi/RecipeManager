@@ -3,6 +3,7 @@ package com.novare.recipe;
 import java.io.File;
 import java.util.List;
 
+import com.novare.recipe.execute.MainMenuAction;
 import com.novare.recipe.model.Ingredient;
 import com.novare.recipe.model.Measurement;
 import com.novare.recipe.model.Recipe;
@@ -13,13 +14,15 @@ import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
 
-public class Main {
+public class RecipeManagerApp {
 
 	public static void main(String[] args) {
 		try {
-			marshalingExample();
-			unMarshalingExample();
-		} catch (JAXBException e) {
+//			marshalingExample();
+//			unMarshalingExample();
+			new MainMenuAction().execute();
+
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -9,7 +9,7 @@ import com.novare.recipe.model.Recipe;
  * performs in this application
  *
  */
-public interface IDieticianService {
+public interface IDieticianService extends IRecipeService {
 	/**
 	 * This is the method used to create the recipe in the application
 	 * 
