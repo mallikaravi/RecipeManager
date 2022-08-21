@@ -1,5 +1,8 @@
 package com.novare.recipe.model;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="ingredient")
 public class Ingredient {
 
 	private String name;

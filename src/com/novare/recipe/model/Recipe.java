@@ -2,11 +2,16 @@ package com.novare.recipe.model;
 
 import java.util.List;
 
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="recipe")
 public class Recipe {
 	private int id;
 	private String name;
 	private List<Ingredient> ingredients;
 	private String steps;
+
 	/**
 	 * @param id
 	 * @param name
@@ -20,48 +25,57 @@ public class Recipe {
 		this.ingredients = ingredients;
 		this.steps = steps;
 	}
+
 	/**
 	 * @return the id
 	 */
+	@XmlElement(name="id")
 	public int getId() {
 		return id;
 	}
+
 	/**
 	 * @param id the id to set
 	 */
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	/**
 	 * @return the name
 	 */
 	public String getName() {
 		return name;
 	}
+
 	/**
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	/**
 	 * @return the ingredients
 	 */
 	public List<Ingredient> getIngredients() {
 		return ingredients;
 	}
+
 	/**
 	 * @param ingredients the ingredients to set
 	 */
 	public void setIngredients(List<Ingredient> ingredients) {
 		this.ingredients = ingredients;
 	}
+
 	/**
 	 * @return the steps
 	 */
 	public String getSteps() {
 		return steps;
 	}
+
 	/**
 	 * @param steps the steps to set
 	 */
@@ -69,7 +83,4 @@ public class Recipe {
 		this.steps = steps;
 	}
 
-	
-
-	
 }
