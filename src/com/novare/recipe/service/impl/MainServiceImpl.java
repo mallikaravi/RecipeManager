@@ -9,24 +9,5 @@ import com.novare.recipe.service.IRecipeService;
 
 public class MainServiceImpl implements IRecipeService {
 
-	@Override
-	public BaseForm handleOption(int selectedOption) {
-		BaseForm returnData = new BaseForm();
-		switch (selectedOption) {
-		case 1 -> {
-			returnData.setAction(new UserMenuAction());
-		}
-		case 2 -> {
-			returnData.setAction(new DieticianMenuAction());
-		}
-		default -> throw new IndexOutOfBoundsException();
-		}
-		return returnData;
-	}
-
-	@Override
-	public List<String> getMenuOptions() {
-		return List.of("User", "Dietician");
-	}
-
+	
 }

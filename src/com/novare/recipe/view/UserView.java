@@ -11,7 +11,7 @@ public class UserView extends BaseView {
 		System.out.println("Invalid option");
 	}
 
-	public void printRequest() {
+	public void printUserRequest() {
 		System.out.print("Choose an option press enter: ");
 	}
 }

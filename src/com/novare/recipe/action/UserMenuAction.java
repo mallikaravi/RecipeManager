@@ -13,8 +13,8 @@ public class UserMenuAction extends BaseMenuAction {
 		UserServiceImpl model = new UserServiceImpl();
 		UserView view = new UserView();
 		UserController controller = new UserController(model, view);
-		BaseForm returnData = controller.requestUserInput();
-		returnData.getAction().execute();
+		BaseForm form = controller.requestUserInput();
+		form.getAction().execute();
 
 	}
 

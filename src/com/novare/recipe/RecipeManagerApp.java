@@ -2,6 +2,7 @@ package com.novare.recipe;
 
 import java.io.File;
 import java.util.List;
+import java.util.Scanner;
 
 import com.novare.recipe.action.MainMenuAction;
 import com.novare.recipe.model.Ingredient;
@@ -20,7 +21,13 @@ public class RecipeManagerApp {
 		try {
 //			marshalingExample();
 //			unMarshalingExample();
-			new MainMenuAction().execute();
+//			new MainMenuAction().execute();
+			Recipe recipe=new Recipe();
+			Scanner scanner=new Scanner(System.in);
+			System.out.println("Please Enter Recipe Name:");
+			String input=scanner.nextLine();
+			recipe.setName(input);
+			
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

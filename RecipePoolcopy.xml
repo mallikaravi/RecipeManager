@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RecipePool>
+    <Recipe>
+        <id>1</id>
+        <name>Italian Stuffed Chicken</name>
+        <Ingredients>
+            <Ingredient>
+                <name>chopped olives or sundried tomatoes</name>
+                <measurement>pc</measurement>
+                <amount>2</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>full-fat soft cheese</name>
+                <measurement>KG</measurement>
+                <amount>2</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>skinless chicken breasts</name>
+                <measurement>KG</measurement>
+                <amount>1</amount>
+            </Ingredient>
+             <Ingredient>
+                <name>ripe tomatoes</name>
+                <measurement>pc</measurement>
+                <amount>4</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Heat oven to 220C/fan 200C/gas 7. Beat the olives or sundried tomatoes, garlic and almost all the herbs into the cheese, then season. Cut a slit along the side of each chicken breast
+               2.Stuff each breast with a quarter of the cheese mix, then press to close. Lift onto a greased baking tray. 
+               3.Roast for 20 mins until the chicken is golden around the edges and the tomatoes look a little shrivelled.
+               4.Serve with a green salad and crusty bread to mop up the juices.</steps>
+    </Recipe>
+    <Recipe>
+        <id>2</id>
+        <name>Biryani</name>
+        <Ingredients>
+            <Ingredient>
+                <name>Meat</name>
+                <measurement>KG</measurement>
+                <amount>1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Semi cooked rice</name>
+                <measurement>KG</measurement>
+                <amount>1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>curd</name>
+                <measurement>KG</measurement>
+                <amount>1.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>lemon juice</name>
+                <measurement>Pcs</measurement>
+                <amount>3</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Clean the meat. Now in a pan, add meat, salt, ginger garlic paste, red chilli powder, green chilli paste, sauteed brown onions, cardamom powder, cinnamon, cumin seeds, cloves, mace, mint leaves and lemon juice.
+               2.Mix all of these ingredients thoroughly together.
+               3.Add curd, clarified butter, semi-cooked rice, saffron, water and oil. Mix it well.
+               4.Now apply sticky dough on the sides of the pan.
+               5.Cover it with a lid and cook for about 25 minutes.6.Hyderabadi biryani is ready to eat. Garnish it with boiled eggs, sliced carrots, cucumbers and serve hot.
+               </steps>
+    </Recipe>
+    <Recipe>
+        <id>3</id>
+        <name>Roesti and salad</name>
+        <Ingredients>
+            <Ingredient>
+                <name>potatoes</name>
+                <measurement>KG</measurement>
+                <amount>1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>carrots</name>
+                <measurement>KG</measurement>
+                <amount>1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>curd</name>
+                <measurement>KG</measurement>
+                <amount>1.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>lemon juice</name>
+                <measurement>Pcs</measurement>
+                <amount>3</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Clean the meat. Now in a pan, add meat, salt, ginger garlic paste, red chilli powder, green chilli paste, sauteed brown onions, cardamom powder, cinnamon, cumin seeds, cloves, mace, mint leaves and lemon juice.
+               2.Mix all of these ingredients thoroughly together.
+               3.Add curd, clarified butter, semi-cooked rice, saffron, water and oil. Mix it well.
+               4.Now apply sticky dough on the sides of the pan.
+               5.Cover it with a lid and cook for about 25 minutes.6.Hyderabadi biryani is ready to eat. Garnish it with boiled eggs, sliced carrots, cucumbers and serve hot.
+               </steps>
+    </Recipe>
+</RecipePool>

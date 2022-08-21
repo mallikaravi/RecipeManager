@@ -12,7 +12,7 @@ public class MainMenuAction extends BaseMenuAction {
 		MainServiceImpl model = new MainServiceImpl();
 		MainView view = new MainView();
 		MainController controller = new MainController(model, view);
-		BaseForm returnData = controller.requestUserInput();
-		returnData.getAction().execute();
+		BaseForm form = controller.requestUserInput();
+		form.getAction().execute();
 	}
 }

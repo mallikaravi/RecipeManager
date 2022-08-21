@@ -13,10 +13,10 @@ public abstract class BaseView {
 
 	public void setMenuOptions(List<String> menuOptions) {
 		PrintHandler.optionList(menuOptions);
-		printRequest();
+		printUserRequest();
 	}
 
 	public abstract void printInvalidOption();
 
-	public abstract void printRequest();
+	public abstract void printUserRequest();
 }
