@@ -1,21 +1,25 @@
 package com.novare.recipe.model;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name="ingredient")
+@XmlRootElement(name = "ingredient")
+@XmlType(propOrder = { "name", "measurement", "amount" })
 public class Ingredient {
 
 	private String name;
 	private String measurement;
-	private String amount;
+	private Integer amount;
+
+	public Ingredient() {
+	}
 
 	/**
 	 * @param name
 	 * @param measurement
 	 * @param amount
 	 */
-	public Ingredient(String name, String measurement, String amount) {
-		super();
+	public Ingredient(String name, String measurement, Integer amount) {
 		this.name = name;
 		this.measurement = measurement;
 		this.amount = amount;
@@ -52,14 +56,14 @@ public class Ingredient {
 	/**
 	 * @return the amount
 	 */
-	public String getAmount() {
+	public Integer getAmount() {
 		return amount;
 	}
 
 	/**
 	 * @param amount the amount to set
 	 */
-	public void setAmount(String amount) {
+	public void setAmount(Integer amount) {
 		this.amount = amount;
 	}
 

@@ -2,15 +2,28 @@ package com.novare.recipe.model;
 
 import java.util.List;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElementWrapper;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name="recipe")
+@XmlRootElement(name = "Recipe")
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = { "id", "name", "ingredients", "steps" })
 public class Recipe {
-	private int id;
+
+	private Integer id;
 	private String name;
+	@XmlElementWrapper(name = "Ingredients")
+	@XmlElement(name = "Ingredient")
 	private List<Ingredient> ingredients;
 	private String steps;
+
+	public Recipe() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @param id
@@ -18,7 +31,7 @@ public class Recipe {
 	 * @param ingredients
 	 * @param steps
 	 */
-	public Recipe(int id, String name, List<Ingredient> ingredients, String steps) {
+	public Recipe(Integer id, String name, List<Ingredient> ingredients, String steps) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -29,15 +42,14 @@ public class Recipe {
 	/**
 	 * @return the id
 	 */
-	@XmlElement(name="id")
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
