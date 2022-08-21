@@ -6,12 +6,12 @@ import java.util.List;
 
 public class PrintHandler {
 	public static void appTitle() {
-		System.out.println("Welcome to the Spotifoo music player! 🎶");
+		System.out.println("=== Recipe Manager ===");
 		System.out.println(); // on purpose to make a space between the title
 	}
 
 	public static void optionBackToMainMenu() {
-		System.out.println("[0] Back to main menu");
+		System.out.println("[0] Quit");
 	}
 
 	public static void optionList(List<String> options) {

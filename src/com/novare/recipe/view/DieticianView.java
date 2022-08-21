@@ -1,16 +1,9 @@
 package com.novare.recipe.view;
 
-import java.util.List;
-
-import com.novare.recipe.util.PrintHandler;
-
-public class DieticianView {
-	public DieticianView(List<String> menuOptions) {
-		PrintHandler.clearScreen();
-		PrintHandler.appTitle();
+public class DieticianView extends BaseView {
+	public DieticianView() {
+		super();
 		System.out.println("Main menu options:");
-		PrintHandler.optionList(menuOptions);
-		printRequest();
 	}
 
 	public void printInvalidOption() {

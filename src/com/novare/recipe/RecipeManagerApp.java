@@ -3,7 +3,7 @@ package com.novare.recipe;
 import java.io.File;
 import java.util.List;
 
-import com.novare.recipe.execute.MainMenuAction;
+import com.novare.recipe.action.MainMenuAction;
 import com.novare.recipe.model.Ingredient;
 import com.novare.recipe.model.Measurement;
 import com.novare.recipe.model.Recipe;

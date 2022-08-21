@@ -1,8 +1,8 @@
 package com.novare.recipe.view;
 
-public class MainView extends BaseView {
+public class UserView extends BaseView {
 
-	public MainView() {
+	public UserView() {
 		super();
 		System.out.println("Main menu options:");
 	}

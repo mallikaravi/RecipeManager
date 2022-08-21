@@ -1,15 +1,15 @@
 package com.novare.recipe.controller;
 
 import com.novare.recipe.form.BaseForm;
-import com.novare.recipe.service.IRecipeService;
-import com.novare.recipe.view.MainView;
+import com.novare.recipe.service.IUserService;
+import com.novare.recipe.view.UserView;
 
-public class MainController extends BaseController {
+public class UserController extends BaseController {
 
-	private final IRecipeService model;
-	private final MainView view;
+	private final IUserService model;
+	private final UserView view;
 
-	public MainController(IRecipeService model, MainView view) {
+	public UserController(IUserService model, UserView view) {
 		super();
 		this.model = model;
 		this.view = view;

@@ -8,11 +8,11 @@ import java.util.List;
 import com.novare.recipe.model.Recipe;
 
 /**
- * This is the interface of the User.It has all the actions that user
- * performs in this application
+ * This is the interface of the User.It has all the actions that user performs
+ * in this application
  *
  */
-public interface IUserService {
+public interface IUserService extends IRecipeService {
 
 	/**
 	 * This is the method to view the recipe
