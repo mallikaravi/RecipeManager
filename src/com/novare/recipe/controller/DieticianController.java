@@ -1,11 +1,8 @@
 package com.novare.recipe.controller;
 
-import com.novare.recipe.action.MainMenuAction;
-import com.novare.recipe.form.BaseForm;
-import com.novare.recipe.form.DieticianForm;
-import com.novare.recipe.form.MainForm;
 import com.novare.recipe.model.Recipe;
 import com.novare.recipe.service.IDieticianService;
+import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.DieticianView;
 
 public class DieticianController extends BaseController {
@@ -13,30 +10,25 @@ public class DieticianController extends BaseController {
 	private final IDieticianService model;
 
 	public DieticianController(IDieticianService model, DieticianView view) {
-		super(new DieticianForm(), view);
+		super(model, view);
 		this.model = model;
 	}
 
 	@Override
-	public BaseForm requestUserInput() throws Exception {
-		BaseForm form = super.requestUserInput();
-		model.handleOption(0);
-//		switch (form.getContext()) {
-//		case CREATE_RECIPE -> {
-//			model.createRecipe(buildRecipe());
-//			form = new MainForm(new MainMenuAction());
-//		}
-//		case VIEW_RECIPE -> {
-//			model.viewRecipe(null);
-//			form.setContext(null);
-//		}
-//		case ALL_RECIPIES -> {
-//			model.getAllRecipes();
-//			form.setContext(null);
-//		}
-//		default -> throw new IllegalArgumentException("Unexpected value: " + form.getContext());
-//		}
-		return form;
+	public void requestUserInput(MenuContext context) throws Exception {
+		String input = getUserTerminal().nextLine();
+
+		try {
+			int selectedOption = Integer.parseInt(input);
+
+			model.handleOption(selectedOption);
+		} catch (IndexOutOfBoundsException | NumberFormatException exception) {
+			getView().printInvalidOption();
+		}
+
+		// request new songs indefinitely on purpose! (Infinity scanner)
+		getView().printUserRequest();
+
 	}
 
 	private Recipe buildRecipe() throws Exception {
@@ -52,7 +44,7 @@ public class DieticianController extends BaseController {
 		if (input.isEmpty()) {
 			throw new Exception();
 		}
-		
+
 		recipe.setName(input);
 		return recipe;
 	}

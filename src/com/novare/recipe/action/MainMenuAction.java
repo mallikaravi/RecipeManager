@@ -11,6 +11,6 @@ public class MainMenuAction extends BaseMenuAction {
 		MainServiceImpl model = new MainServiceImpl();
 		MainView view = new MainView();
 		MainController controller = new MainController(model, view);
-		controller.requestUserInput();
+		controller.requestUserInput(null);
 	}
 }

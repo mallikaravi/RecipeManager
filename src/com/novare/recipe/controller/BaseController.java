@@ -2,40 +2,35 @@ package com.novare.recipe.controller;
 
 import java.util.Scanner;
 
-import com.novare.recipe.form.BaseForm;
-import com.novare.recipe.util.PrintHandler;
+import com.novare.recipe.service.IRecipeService;
+import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.BaseView;
 
 public abstract class BaseController {
 	private final Scanner scanner;
-	private final BaseForm form;
 	private final BaseView view;
+	private final IRecipeService model;
 
-	public BaseController(BaseForm form, BaseView view) {
+	public BaseController(IRecipeService model, BaseView view) {
 		this.scanner = new Scanner(System.in);
-		this.form = form;
 		this.view = view;
+		this.model = model;
 	}
 
 	protected Scanner getUserTerminal() {
 		return scanner;
 	}
 
-	public BaseForm requestUserInput() throws Exception {
-		view.setMenuOptions(form.getMenuOptions());
-		String input = getUserTerminal().nextLine();
-		try {
-			if (form.getContext() == null) {
-				int option = PrintHandler.readInput(input);
-				form.handleOption(option);
-			}
-			form.setUserInput(input);
-			return form;
-		} catch (Exception exception) {
-			view.printInvalidOption();
-			view.printUserRequest();
-			return requestUserInput();
-		}
+	public BaseView getView() {
+		return view;
+	}
+
+	public IRecipeService getModel() {
+		return model;
+	}
+
+	public void requestUserInput(MenuContext context) throws Exception {
+		view.setMenuOptions(model.getMenuOptions());
 
 	}
 }
