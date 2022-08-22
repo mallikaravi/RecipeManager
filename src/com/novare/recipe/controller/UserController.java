@@ -15,7 +15,7 @@ public class UserController extends BaseController {
 	}
 
 	@Override
-	public BaseForm requestUserInput() {
+	public BaseForm requestUserInput() throws Exception {
 		BaseForm form = super.requestUserInput();
 		return form;
 	}

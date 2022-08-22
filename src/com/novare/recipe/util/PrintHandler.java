@@ -23,6 +23,19 @@ public class PrintHandler {
 		}
 	}
 
+	public static void optionListInRow(List<?> options) {
+		for (int index = 0; index < options.size(); index++) {
+			int number = index + 1;
+
+			if (index % 4 == 0) {
+				System.out.println();
+			}
+			String label = options.get(index).toString();
+			System.out.format("[%-2d] %-40s ", number, label);
+		}
+
+	}
+
 	/**
 	 * Method to clear screen in the terminal.I have written a condition to clear
 	 * the screen in all the operating systems.

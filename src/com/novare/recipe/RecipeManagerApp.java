@@ -2,7 +2,6 @@ package com.novare.recipe;
 
 import java.io.File;
 import java.util.List;
-import java.util.Scanner;
 
 import com.novare.recipe.action.MainMenuAction;
 import com.novare.recipe.model.Ingredient;
@@ -21,15 +20,16 @@ public class RecipeManagerApp {
 	public static void main(String[] args) {
 		try {
 //			marshalingExample();
-			//RecipePool pool = unMarshalingExample();
-			 IngredientPool ingredientPool=unMarshalingExample();
-			 System.out.println(ingredientPool);
-//			new MainMenuAction().execute();
-			Recipe recipe = new Recipe();
-			Scanner scanner = new Scanner(System.in);
-			System.out.println("Please Enter Recipe Name:");
-			String input = scanner.nextLine();
-			recipe.setName(input);
+			// RecipePool pool = unMarshalingExample();
+//			IngredientPool ingredientPool = unMarshalingExample();
+//			System.out.println(ingredientPool.getIngredients());
+//			PrintHandler.optionListInRow(ingredientPool.getIngredients());
+			new MainMenuAction().execute();
+//			Recipe recipe = new Recipe();
+//			Scanner scanner = new Scanner(System.in);
+//			System.out.println("Please Enter Recipe Name:");
+//			String input = scanner.nextLine();
+//			recipe.setName(input);
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -52,36 +52,32 @@ public class RecipeManagerApp {
 		jaxbMarshaller.marshal(pool, new File("RecipePool.xml"));
 	}
 
-	/*private static RecipePool unMarshalingExample() throws JAXBException {
-		JAXBContext jaxbContext = JAXBContext.newInstance(RecipePool.class);
-		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+	/*
+	 * private static RecipePool unMarshalingExample() throws JAXBException {
+	 * JAXBContext jaxbContext = JAXBContext.newInstance(RecipePool.class);
+	 * Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+	 * 
+	 * // We had written this file in marshalling example RecipePool pool =
+	 * (RecipePool) jaxbUnmarshaller.unmarshal(new File("RecipePool.xml"));
+	 * 
+	 * for (Recipe recipe : pool.getRecipes()) { System.out.println(recipe.getId());
+	 * System.out.println(recipe.getIngredients()); } return pool; }
+	 */
 
-		// We had written this file in marshalling example
-		RecipePool pool = (RecipePool) jaxbUnmarshaller.unmarshal(new File("RecipePool.xml"));
-
-		for (Recipe recipe : pool.getRecipes()) {
-			System.out.println(recipe.getId());
-			System.out.println(recipe.getIngredients());
-		}
-		return pool;
-	}*/
-	
 	private static IngredientPool unMarshalingExample() throws JAXBException {
 		JAXBContext jaxbContext = JAXBContext.newInstance(IngredientPool.class);
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
 		// We had written this file in marshalling example
 		IngredientPool ingredientPool = (IngredientPool) jaxbUnmarshaller.unmarshal(new File("ingredients.xml"));
-		
-		for(Ingredient ingredient:ingredientPool.getIngredients()) {
-			System.out.println(ingredient.getName());
-			System.out.println(ingredient.getMeasurement());
-			System.out.println(ingredient.getAmount());
-		}
+
+//		for (Ingredient ingredient : ingredientPool.getIngredients()) {
+//			System.out.println(ingredient.getName());
+//			System.out.println(ingredient.getMeasurement());
+//			System.out.println(ingredient.getAmount());
+//		}
 		return ingredientPool;
 
-		
-		
 	}
-	
+
 }

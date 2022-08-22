@@ -36,4 +36,16 @@ public class UserServiceImpl implements IUserService {
 		return null;
 	}
 
+	@Override
+	public List<String> getMenuOptions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void handleOption(int selectedOption) throws IndexOutOfBoundsException {
+		// TODO Auto-generated method stub
+
+	}
+
 }

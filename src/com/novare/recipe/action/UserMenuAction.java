@@ -8,7 +8,7 @@ import com.novare.recipe.view.UserView;
 public class UserMenuAction extends BaseMenuAction {
 
 	@Override
-	public void execute() {
+	public void execute() throws Exception {
 
 		UserServiceImpl model = new UserServiceImpl();
 		UserView view = new UserView();

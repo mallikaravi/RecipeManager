@@ -3,6 +3,7 @@ package com.novare.recipe.controller;
 import java.util.Scanner;
 
 import com.novare.recipe.form.BaseForm;
+import com.novare.recipe.util.PrintHandler;
 import com.novare.recipe.view.BaseView;
 
 public abstract class BaseController {
@@ -20,13 +21,17 @@ public abstract class BaseController {
 		return scanner;
 	}
 
-	public BaseForm requestUserInput() {
+	public BaseForm requestUserInput() throws Exception {
 		view.setMenuOptions(form.getMenuOptions());
 		String input = getUserTerminal().nextLine();
 		try {
-			int selectedOption = Integer.parseInt(input);
-			return form.handleOption(selectedOption);
-		} catch (NumberFormatException | IndexOutOfBoundsException exception) {
+			if (form.getContext() == null) {
+				int option = PrintHandler.readInput(input);
+				form.handleOption(option);
+			}
+			form.setUserInput(input);
+			return form;
+		} catch (Exception exception) {
 			view.printInvalidOption();
 			view.printUserRequest();
 			return requestUserInput();

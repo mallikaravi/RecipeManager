@@ -3,9 +3,18 @@ package com.novare.recipe.form;
 import java.util.List;
 
 import com.novare.recipe.action.DieticianMenuAction;
+import com.novare.recipe.action.MainMenuAction;
 import com.novare.recipe.action.UserMenuAction;
 
 public class MainForm extends BaseForm {
+
+	public MainForm() {
+		super();
+	}
+
+	public MainForm(MainMenuAction action) {
+		super(action);
+	}
 
 	@Override
 	public BaseForm handleOption(int selectedOption) {

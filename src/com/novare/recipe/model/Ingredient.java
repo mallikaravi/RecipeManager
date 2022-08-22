@@ -69,7 +69,7 @@ public class Ingredient {
 
 	@Override
 	public String toString() {
-		return "Ingredient [name=" + name + ", measurement=" + measurement + ", amount=" + amount + "]";
+		return name.toUpperCase() + " (" + amount + ", " + measurement + ")";
 	}
 
 }

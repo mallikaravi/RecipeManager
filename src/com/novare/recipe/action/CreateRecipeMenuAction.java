@@ -4,7 +4,7 @@ import com.novare.recipe.controller.DieticianController;
 import com.novare.recipe.service.impl.DieticianServiceImpl;
 import com.novare.recipe.view.DieticianView;
 
-public class DieticianMenuAction extends BaseMenuAction {
+public class CreateRecipeMenuAction extends BaseMenuAction {
 
 	@Override
 	public void execute() throws Exception {
