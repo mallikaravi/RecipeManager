@@ -14,4 +14,5 @@ public class UserView extends BaseView {
 	public void printUserRequest() {
 		System.out.print("Choose an option press enter: ");
 	}
+
 }

@@ -1,5 +1,6 @@
 package com.novare.recipe.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
@@ -18,7 +19,7 @@ public class Recipe {
 	private String name;
 	@XmlElementWrapper(name = "Ingredients")
 	@XmlElement(name = "Ingredient")
-	private List<Ingredient> ingredients;
+	private List<Ingredient> ingredients = new ArrayList<>();
 	private String steps;
 
 	public Recipe() {

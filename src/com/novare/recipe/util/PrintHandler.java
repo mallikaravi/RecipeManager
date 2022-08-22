@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PrintHandler {
 	public static void appTitle() {
-		System.out.println("=== Recipe Manager ===");
+		System.out.println("** Welcome To Recipe Manager **");
 		System.out.println(); // on purpose to make a space between the title
 	}
 
@@ -33,7 +33,7 @@ public class PrintHandler {
 			String label = options.get(index).toString();
 			System.out.format("[%-2d] %-40s ", number, label);
 		}
-
+		System.out.println();
 	}
 
 	/**

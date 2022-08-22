@@ -2,6 +2,8 @@ package com.novare.recipe.service;
 
 import java.util.List;
 
+import com.novare.recipe.model.Ingredient;
+import com.novare.recipe.model.IngredientPool;
 import com.novare.recipe.model.Recipe;
 
 /**
@@ -44,5 +46,7 @@ public interface IDieticianService extends IRecipeService {
 	 * @return-list of recipes
 	 */
 	List<Recipe> getAllRecipes();
+	
+	List<Ingredient> getAllIngredients() throws Exception;
 
 }

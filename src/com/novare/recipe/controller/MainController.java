@@ -15,10 +15,8 @@ public class MainController extends BaseController {
 		super.requestUserInput(context);
 
         String input = getUserTerminal().nextLine();
-
         try {
             int selectedOption = Integer.parseInt(input);
-
             getModel().handleOption(selectedOption);
         }
         catch (NumberFormatException | IndexOutOfBoundsException exception) {

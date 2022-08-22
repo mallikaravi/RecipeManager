@@ -43,7 +43,7 @@ public class UserServiceImpl implements IUserService {
 	}
 
 	@Override
-	public void handleOption(int selectedOption) throws IndexOutOfBoundsException {
+	public void handleOption(int selectedOption) throws Exception {
 		// TODO Auto-generated method stub
 
 	}

@@ -12,6 +12,7 @@ public class CreateRecipeMenuAction extends BaseMenuAction {
 
 		DieticianServiceImpl model = new DieticianServiceImpl();
 		DieticianView view = new DieticianView();
+		view.printMenuTitle("Create Recipe");
 		DieticianController controller = new DieticianController(model, view);
 		controller.requestUserInput(MenuContext.CREATE_RECIPE);
 

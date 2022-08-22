@@ -14,14 +14,14 @@ public class MainServiceImpl implements IRecipeService {
 	}
 
 	@Override
-	public void handleOption(int selectedOption) throws IndexOutOfBoundsException {
+	public void handleOption(int selectedOption) throws Exception {
 
 		switch (selectedOption) {
 		case 1 -> {
-			new UserMenuAction();
+			new UserMenuAction().execute();
 		}
 		case 2 -> {
-			new DieticianMenuAction();
+			new DieticianMenuAction().execute();
 		}
 		default -> throw new IndexOutOfBoundsException();
 		}
