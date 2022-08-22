@@ -9,7 +9,7 @@ public class Ingredient {
 
 	private String name;
 	private String measurement;
-	private Integer amount;
+	private float amount;
 
 	public Ingredient() {
 	}
@@ -19,7 +19,7 @@ public class Ingredient {
 	 * @param measurement
 	 * @param amount
 	 */
-	public Ingredient(String name, String measurement, Integer amount) {
+	public Ingredient(String name, String measurement, float amount) {
 		this.name = name;
 		this.measurement = measurement;
 		this.amount = amount;
@@ -56,14 +56,14 @@ public class Ingredient {
 	/**
 	 * @return the amount
 	 */
-	public Integer getAmount() {
+	public float getAmount() {
 		return amount;
 	}
 
 	/**
 	 * @param amount the amount to set
 	 */
-	public void setAmount(Integer amount) {
+	public void setAmount(float amount) {
 		this.amount = amount;
 	}
 

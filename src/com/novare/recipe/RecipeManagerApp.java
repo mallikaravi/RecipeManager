@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import com.novare.recipe.action.MainMenuAction;
 import com.novare.recipe.model.Ingredient;
+import com.novare.recipe.model.IngredientPool;
 import com.novare.recipe.model.Measurement;
 import com.novare.recipe.model.Recipe;
 import com.novare.recipe.model.RecipePool;
@@ -20,7 +21,9 @@ public class RecipeManagerApp {
 	public static void main(String[] args) {
 		try {
 //			marshalingExample();
-			RecipePool pool = unMarshalingExample();
+			//RecipePool pool = unMarshalingExample();
+			 IngredientPool ingredientPool=unMarshalingExample();
+			 System.out.println(ingredientPool);
 //			new MainMenuAction().execute();
 			Recipe recipe = new Recipe();
 			Scanner scanner = new Scanner(System.in);
@@ -49,7 +52,7 @@ public class RecipeManagerApp {
 		jaxbMarshaller.marshal(pool, new File("RecipePool.xml"));
 	}
 
-	private static RecipePool unMarshalingExample() throws JAXBException {
+	/*private static RecipePool unMarshalingExample() throws JAXBException {
 		JAXBContext jaxbContext = JAXBContext.newInstance(RecipePool.class);
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
@@ -61,5 +64,24 @@ public class RecipeManagerApp {
 			System.out.println(recipe.getIngredients());
 		}
 		return pool;
+	}*/
+	
+	private static IngredientPool unMarshalingExample() throws JAXBException {
+		JAXBContext jaxbContext = JAXBContext.newInstance(IngredientPool.class);
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+
+		// We had written this file in marshalling example
+		IngredientPool ingredientPool = (IngredientPool) jaxbUnmarshaller.unmarshal(new File("ingredients.xml"));
+		
+		for(Ingredient ingredient:ingredientPool.getIngredients()) {
+			System.out.println(ingredient.getName());
+			System.out.println(ingredient.getMeasurement());
+			System.out.println(ingredient.getAmount());
+		}
+		return ingredientPool;
+
+		
+		
 	}
+	
 }
