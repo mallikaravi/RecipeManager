@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Ingredients>
+	<Ingredient>
+		<name>Meat</name>
+		<measurement>KG</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>Semi cooked rice</name>
+		<measurement>KG</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>curd</name>
+		<measurement>KG</measurement>
+		<amount>1.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>lemon juice</name>
+		<measurement>Pcs</measurement>
+		<amount>3</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>potatoes</name>
+		<measurement>KG</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>carrots</name>
+		<measurement>KG</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>louki</name>
+		<measurement>PC</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>butter</name>
+		<measurement>kg</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>cottage cheese</name>
+		<measurement>KG</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>Tomatoes</name>
+		<measurement>KG</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>coriander leaves</name>
+		<measurement>PC</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>bread</name>
+		<measurement>PC</measurement>
+		<amount>2</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>chicken</name>
+		<measurement>KG</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>coconut milk</name>
+		<measurement>LTR</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>eggs</name>
+		<measurement>PC</measurement>
+		<amount>4</amount>
+	</Ingredient>
+	<Ingredient>
+		<name> rice noodles cooked</name>
+		<measurement>kg</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>large onions</name>
+		<measurement>Pc</measurement>
+		<amount>3</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>white firm flesh fish fillet</name>
+		<measurement>KG</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>maida</name>
+		<measurement>PC</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>egg</name>
+		<measurement>PC</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>soda water</name>
+		<measurement>LTR</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>baking powder</name>
+		<measurement>Pc</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>boneless chicken</name>
+		<measurement>KG</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>ginger garlic paste</name>
+		<measurement>PC</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>rosemary twigs with leaves</name>
+		<measurement>PC</measurement>
+		<amount>8</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>bay leaves</name>
+		<measurement>PC</measurement>
+		<amount>3</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>boneless chicken</name>
+		<measurement>KG</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>green chillies</name>
+		<measurement>PC</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>eggs</name>
+		<measurement>PC</measurement>
+		<amount>2</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>pepper powder</name>
+		<measurement>PC</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>boneless chicken</name>
+		<measurement>KG</measurement>
+		<amount>1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>green chillies</name>
+		<measurement>PC</measurement>
+		<amount>2</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>curd</name>
+		<measurement>LTR</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>tomatoes</name>
+		<measurement>PC</measurement>
+		<amount>4</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>Mixed vegetables</name>
+		<measurement>KG</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>cheese</name>
+		<measurement>PC</measurement>
+		<amount>3</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>milk</name>
+		<measurement>LTR</measurement>
+		<amount>0.5</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>maida</name>
+		<measurement>PC</measurement>
+		<amount>4</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>vegetable oil</name>
+		<measurement>LTR</measurement>
+		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>Horseradish sauce</name>
+		<measurement>KG</measurement>
+		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>lamb minced</name>
+		<measurement>KG</measurement>
+		<amount>0.2</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>vegetable oil</name>
+		<measurement>LTR</measurement>
+		<amount>0.01</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>cabbage</name>
+		<measurement>KG</measurement>
+		<amount>0.01</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>carrot</name>
+		<measurement>KG</measurement>
+		<amount>0.02</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>capscicum</name>
+		<measurement>PC</measurement>
+		<amount>3</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>rice</name>
+		<measurement>KG</measurement>
+		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>vegetable oil</name>
+		<measurement>LTR</measurement>
+		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>rice</name>
+		<measurement>KG</measurement>
+		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>tamarind pulp</name>
+		<measurement>KG</measurement>
+		<amount>0.2</amount>
+	</Ingredient>
+
+</Ingredients>

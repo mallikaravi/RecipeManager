@@ -1,5 +1,9 @@
 package com.novare.recipe.model;
 
+/**
+ * This is the enum used for the measurement of ingredients
+ *
+ */
 public enum Measurement {
 
 	Quantity("PC"), Liters("LTR"), Kilogram("KG");

@@ -20,14 +20,13 @@ public class RecipeManagerApp {
 	public static void main(String[] args) {
 		try {
 //			marshalingExample();
-//			unMarshalingExample();
+			RecipePool pool = unMarshalingExample();
 //			new MainMenuAction().execute();
-			Recipe recipe=new Recipe();
-			Scanner scanner=new Scanner(System.in);
+			Recipe recipe = new Recipe();
+			Scanner scanner = new Scanner(System.in);
 			System.out.println("Please Enter Recipe Name:");
-			String input=scanner.nextLine();
+			String input = scanner.nextLine();
 			recipe.setName(input);
-			
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -46,11 +45,11 @@ public class RecipeManagerApp {
 
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
-		// Marshal the employees list in file
+		// Marshal the Recipepool list in file
 		jaxbMarshaller.marshal(pool, new File("RecipePool.xml"));
 	}
 
-	private static void unMarshalingExample() throws JAXBException {
+	private static RecipePool unMarshalingExample() throws JAXBException {
 		JAXBContext jaxbContext = JAXBContext.newInstance(RecipePool.class);
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
@@ -61,5 +60,6 @@ public class RecipeManagerApp {
 			System.out.println(recipe.getId());
 			System.out.println(recipe.getIngredients());
 		}
+		return pool;
 	}
 }
