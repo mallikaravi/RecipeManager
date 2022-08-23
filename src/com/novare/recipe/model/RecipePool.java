@@ -21,6 +21,7 @@ public class RecipePool implements Serializable {
 	private List<Recipe> pool = new ArrayList<>();
 
 	public RecipePool() {
+		this.pool=new ArrayList();
 	}
 
 	public List<Recipe> getRecipes() {

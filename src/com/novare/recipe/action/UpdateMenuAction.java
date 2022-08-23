@@ -5,16 +5,15 @@ import com.novare.recipe.service.impl.DieticianServiceImpl;
 import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.DieticianView;
 
-public class CreateRecipeMenuAction extends BaseMenuAction {
-
+public class UpdateMenuAction extends BaseMenuAction {
 	@Override
 	public void execute() throws Exception {
 
 		DieticianServiceImpl model = new DieticianServiceImpl();
 		DieticianView view = new DieticianView();
-		view.setTitle("Create Recipe");
+		view.setTitle("Update Recipe");
 		DieticianController controller = new DieticianController(model, view);
-		controller.requestUserInput(MenuContext.CREATE_RECIPE);
+		controller.requestUserInput(MenuContext.UPDATE_RECIPE);
 
 	}
 

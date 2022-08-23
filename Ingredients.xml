@@ -113,7 +113,7 @@
 	<Ingredient>
 		<name>boneless chicken</name>
 		<measurement>KG</measurement>
-		<amount>0.5</amount>
+		<amount>1</amount>
 	</Ingredient>
 	<Ingredient>
 		<name>ginger garlic paste</name>
@@ -151,7 +151,7 @@
 		<amount>1</amount>
 	</Ingredient>
 	<Ingredient>
-		<name>boneless chicken</name>
+		<name>boneless chicken pieces</name>
 		<measurement>KG</measurement>
 		<amount>1</amount>
 	</Ingredient>
@@ -231,9 +231,19 @@
 		<amount>0.1</amount>
 	</Ingredient>
 	<Ingredient>
-		<name>vegetable oil</name>
+		<name>Milk</name>
 		<measurement>LTR</measurement>
 		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>rice flakes</name>
+		<measurement>KG</measurement>
+		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>Vegetables</name>
+		<measurement>KG</measurement>
+		<amount>0.2</amount>
 	</Ingredient>
 	<Ingredient>
 		<name>rice</name>
@@ -241,7 +251,17 @@
 		<amount>0.1</amount>
 	</Ingredient>
 	<Ingredient>
-		<name>tamarind pulp</name>
+		<name>cabbage</name>
+		<measurement>KG</measurement>
+		<amount>0.2</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>Butter</name>
+		<measurement>KG</measurement>
+		<amount>0.1</amount>
+	</Ingredient>
+	<Ingredient>
+		<name>Beetroot</name>
 		<measurement>KG</measurement>
 		<amount>0.2</amount>
 	</Ingredient>

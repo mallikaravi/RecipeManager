@@ -58,7 +58,7 @@ public class PrintHandler {
 	}
 
 	/**
-	 * This method is for parse and convert the input string into Integer value,
+	 * This method is to parse and convert the input string into Integer value,
 	 * otherwise it will return -1 which is invalid option
 	 * 
 	 * @param userInput, user entered value in the terminal @return, integer value

@@ -12,7 +12,7 @@ public class DieticianController extends BaseController {
 
 	private final IDieticianService model;
 	private final DieticianView view;
-	private Recipe recipe;
+	private Recipe recipeCache = new Recipe();;
 
 	public DieticianController(IDieticianService model, DieticianView view) {
 		super(model, view);
@@ -25,6 +25,12 @@ public class DieticianController extends BaseController {
 		try {
 			if (context == MenuContext.CREATE_RECIPE) {
 				createRecipe();
+				getModel().handleOption(0);
+			} else if (context == MenuContext.VIEW_RECIPE) {
+				viewRecipe();
+				getModel().handleOption(0);
+			} else if (context == MenuContext.UPDATE_RECIPE) {
+				updateRecipe();
 				getModel().handleOption(0);
 			} else {
 				super.requestUserInput(context);
@@ -50,30 +56,78 @@ public class DieticianController extends BaseController {
 		return this.view;
 	}
 
-	private Recipe createRecipe() throws Exception {
-		recipe = new Recipe();
-		if (recipe.getName() == null) {
-			getView().askRecipeName();
-			String input = getUserTerminal().nextLine();
-			if (input.isEmpty()) {
-				throw new IllegalArgumentException();
-			}
-			recipe.setName(input);
+	private void createRecipe() throws Exception {
+		if (recipeCache.getName() == null) {
+			recipeCache.setName(getView().askRecipeName());
 		}
-		if (recipe.getIngredients().isEmpty()) {
-			List<Ingredient> allIngredients = model.getAllIngredients();
-			getView().setMenuOptionsInRow(allIngredients);
-			getView().askIngredients();
-			String input = getUserTerminal().nextLine();
-			if (input.isEmpty()) {
-				throw new IllegalArgumentException();
-			}
-			for(String ingredient:input.split(",")) {
-				int selection = Integer.parseInt(ingredient);
-				recipe.getIngredients().add(allIngredients.get(selection-1));
-			}
+		if (recipeCache.getIngredients().isEmpty()) {
+			addIngredientsToRecipe();
 		}
-
-		return recipe;
+		if (recipeCache.getSteps() == null) {
+			recipeCache.setSteps(getView().askRecipeSteps());
+		}
+		getModel().createRecipe(recipeCache);
+		getView().printSaveMessage();
 	}
+
+	private void addIngredientsToRecipe() throws Exception {
+		List<Ingredient> allIngredients = getModel().getAllIngredients();
+		getView().setMenuOptionsInRow(allIngredients);
+		for (Integer selection : getView().askIngredients()) {
+			if (selection > allIngredients.size()) {
+				throw new IndexOutOfBoundsException();
+			}
+			recipeCache.getIngredients().add(allIngredients.get(selection - 1));
+		}
+	}
+
+	private void viewRecipe() throws Exception {
+		List<Recipe> allRecipes = getModel().getAllRecipes();
+		getView().setMenuOptionsInRow(allRecipes);
+		int selection = getView().askUserToChooseRecipe();
+		if (selection > allRecipes.size()) {
+			throw new IndexOutOfBoundsException();
+		}
+		recipeCache = allRecipes.get(selection - 1);
+		getView().printMessage("Recipe Name:" + recipeCache.getName() + "\n\nIngredients:"
+				+ recipeCache.getIngredients() + "\n\nSteps:" + recipeCache.getSteps());
+
+	}
+
+	private void updateRecipe() throws Exception {
+		List<Recipe> allRecipes = getModel().getAllRecipes();
+		getView().setMenuOptionsInRow(allRecipes);
+		int selection = getView().askUserToChooseRecipe();
+		if (selection > allRecipes.size()) {
+			throw new IndexOutOfBoundsException();
+		}
+		recipeCache = allRecipes.get(selection - 1);
+		if (!getView().askRecipeNameChange().isEmpty()) {
+			recipeCache.setName(getView().askRecipeNameChange());
+		}
+		updateRecipeIngredients();
+		if (!getView().askRecipeStepChange().isEmpty()) {
+			recipeCache.setName(getView().askRecipeNameChange());
+		}
+		getModel().updateRecipe(recipeCache);
+	}
+
+	private void updateRecipeIngredients() throws Exception {
+		List<Ingredient> ingredients = recipeCache.getIngredients();
+		List<Integer> askIngredientChange = getView().askIngredientChange(ingredients);
+		if (askIngredientChange.isEmpty()) {
+			if (getView().askIngredientAddition()) {
+				addIngredientsToRecipe();
+			}
+		} else {
+			for (Integer ingredient : askIngredientChange) {
+				if (ingredient > ingredients.size()) {
+					throw new IndexOutOfBoundsException();
+				}
+				recipeCache.getIngredients().remove(ingredients.get(ingredient - 1));
+			}
+			updateRecipeIngredients();
+		}
+	}
+
 }

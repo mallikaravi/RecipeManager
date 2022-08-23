@@ -3,8 +3,8 @@ package com.novare.recipe.service;
 import java.util.List;
 
 import com.novare.recipe.model.Ingredient;
-import com.novare.recipe.model.IngredientPool;
 import com.novare.recipe.model.Recipe;
+import com.novare.recipe.model.RecipePool;
 
 /**
  * This is the interface of the Dietician.It has all the actions that dietician
@@ -17,14 +17,7 @@ public interface IDieticianService extends IRecipeService {
 	 * 
 	 * @return-Recipe
 	 */
-	Recipe createRecipe(Recipe recipe);
-
-	/**
-	 * This method is used to view the recipe in the application
-	 * 
-	 * @return-recipe
-	 */
-	Recipe viewRecipe(Recipe recipe);
+	Recipe createRecipe(Recipe recipe) throws Exception;
 
 	/**
 	 * This is the method used to edit or update the recipe in the application
@@ -45,8 +38,10 @@ public interface IDieticianService extends IRecipeService {
 	 * 
 	 * @return-list of recipes
 	 */
-	List<Recipe> getAllRecipes();
-	
+	List<Recipe> getAllRecipes() throws Exception;
+
 	List<Ingredient> getAllIngredients() throws Exception;
+
+	RecipePool getRecipePool() throws Exception;
 
 }

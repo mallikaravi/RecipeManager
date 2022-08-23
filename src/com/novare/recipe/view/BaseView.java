@@ -27,8 +27,29 @@ public abstract class BaseView {
 		return scanner;
 	}
 
-	public abstract void printInvalidOption();
+	public void printSaveMessage() {
+		System.out.println("Data successfully Saved/Updated");
+	}
 
-	public abstract void printUserRequest();
+	public void printInvalidOption() {
+		System.out.println("Invalid option");
+	}
+
+	public void printUserRequest() {
+		System.out.print("Choose an option and press enter: ");
+	}
+
+	public void printMessage(String message) {
+		System.out.println(message);
+	}
+
+	public boolean askConfirmationYesOrNo() {
+		String input = getUserTerminal().nextLine();
+		if (input.isEmpty()) {
+			throw new IllegalArgumentException();
+		}
+
+		return input.equalsIgnoreCase("Yes") || input.equalsIgnoreCase("y");
+	}
 
 }
