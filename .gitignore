@@ -58,3 +58,4 @@ local.properties
 .DS_Store
 *.lck
 *.bak_001d
+src/com/novare/recipe/Demo.java
