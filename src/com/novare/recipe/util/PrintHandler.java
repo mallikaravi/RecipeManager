@@ -23,6 +23,12 @@ public class PrintHandler {
 		}
 	}
 
+	public static void optionListWithoutIndex(List<String> options) {
+		for (String label : options) {
+			System.out.println(label);
+		}
+	}
+
 	public static void optionListInRow(List<?> options) {
 		for (int index = 0; index < options.size(); index++) {
 			int number = index + 1;

@@ -28,6 +28,7 @@ public class DieticianController extends BaseController {
 				getModel().handleOption(0);
 			} else if (context == MenuContext.VIEW_RECIPE) {
 				viewRecipe();
+				getView().waitForDecision();
 				getModel().handleOption(0);
 			} else if (context == MenuContext.UPDATE_RECIPE) {
 				updateRecipe();

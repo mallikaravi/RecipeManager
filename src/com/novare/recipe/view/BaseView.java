@@ -14,8 +14,12 @@ public abstract class BaseView {
 		PrintHandler.appTitle();
 	}
 
-	public void setMenuOptions(List<String> menuOptions) {
-		PrintHandler.optionList(menuOptions);
+	public void setMenuOptions(List<String> menuOptions, boolean... index) {
+		if (index.length > 0) {
+			PrintHandler.optionListWithoutIndex(menuOptions);
+		} else {
+			PrintHandler.optionList(menuOptions);
+		}
 		printUserRequest();
 	}
 

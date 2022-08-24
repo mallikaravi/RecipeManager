@@ -38,11 +38,16 @@ public class DieticianView extends BaseView {
 	}
 
 	public String askRecipeSteps() {
-		System.out.println("Enter Steps and press enter:");
-		String input = getUserTerminal().nextLine();
-		if (input.isEmpty()) {
-			throw new IllegalArgumentException();
+		StringBuilder steps = new StringBuilder();
+		System.out.println("Enter Steps and press enter [Type 'exit' to save the steps]:");
+
+		String input = "";
+		while (!input.equalsIgnoreCase("exit")) {
+			input = getUserTerminal().nextLine();
+			steps.append(input);
+			steps.append("\n");
 		}
+
 		return input;
 	}
 
@@ -56,6 +61,19 @@ public class DieticianView extends BaseView {
 			return Integer.parseInt(input);
 		} catch (NumberFormatException e) {
 			throw new IllegalArgumentException();
+		}
+	}
+
+	public void waitForDecision() {
+		setMenuOptions(List.of("[C] Continue", "[Q] Quit"), false);
+		String input = getUserTerminal().nextLine();
+		boolean isValid = input.equalsIgnoreCase("C") || input.equalsIgnoreCase("Q");
+		if (input.isEmpty() || !isValid) {
+			throw new IllegalArgumentException();
+		}
+		if (input.equalsIgnoreCase("Q")) {
+			printMessage("BYE !");
+			System.exit(0);
 		}
 	}
 
