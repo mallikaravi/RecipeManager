@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>recipe-manager</groupId>
 	<artifactId>recipe-manager</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -13,22 +13,35 @@
 					<release>17</release>
 				</configuration>
 			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>com.novare.recipe.RecipeManagerApp</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 	<dependencies>
-		<!-- JAXB API only -->
 		<dependency>
-			<groupId>jakarta.xml.bind</groupId>
-			<artifactId>jakarta.xml.bind-api</artifactId>
-			<version>3.0.0</version>
-		</dependency>
-
-		<!-- JAXB RI, Jakarta XML Binding -->
-		<dependency>
-			<groupId>com.sun.xml.bind</groupId>
-			<artifactId>jaxb-impl</artifactId>
-			<version>3.0.0</version>
-			<scope>runtime</scope>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>4.0.0</version>
 		</dependency>
 
 	</dependencies>

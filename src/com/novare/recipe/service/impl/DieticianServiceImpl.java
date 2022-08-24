@@ -1,6 +1,6 @@
 package com.novare.recipe.service.impl;
 
-import java.io.File;
+import java.nio.file.Paths;
 import java.util.List;
 
 import com.novare.recipe.action.CreateRecipeMenuAction;
@@ -35,7 +35,6 @@ public class DieticianServiceImpl implements IDieticianService {
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 		// Marshal the Recipepool list in file
-		jaxbMarshaller.marshal(pool, new File("RecipePool.xml"));
 		return recipe;
 	}
 
@@ -65,7 +64,8 @@ public class DieticianServiceImpl implements IDieticianService {
 		try {
 			JAXBContext jaxbContext = JAXBContext.newInstance(IngredientPool.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-			IngredientPool ingredientPool = (IngredientPool) jaxbUnmarshaller.unmarshal(new File("Ingredients.xml"));
+			IngredientPool ingredientPool = (IngredientPool) jaxbUnmarshaller
+					.unmarshal(Paths.get("Ingredients.xml").toFile());
 			return ingredientPool.getIngredients();
 		} catch (JAXBException e) {
 			throw new Exception();
@@ -78,7 +78,7 @@ public class DieticianServiceImpl implements IDieticianService {
 		try {
 			JAXBContext jaxbContext = JAXBContext.newInstance(RecipePool.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-			RecipePool recipePool = (RecipePool) jaxbUnmarshaller.unmarshal(new File("RecipePool.xml"));
+			RecipePool recipePool = (RecipePool) jaxbUnmarshaller.unmarshal(Paths.get("RecipePool.xml").toFile());
 			return recipePool;
 		} catch (JAXBException e) {
 			throw new Exception();
