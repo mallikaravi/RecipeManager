@@ -35,6 +35,7 @@ public class DieticianServiceImpl implements IDieticianService {
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 		// Marshal the Recipepool list in file
+		jaxbMarshaller.marshal(pool, Paths.get("RecipePool.xml").toFile());
 		return recipe;
 	}
 
