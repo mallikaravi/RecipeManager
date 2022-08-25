@@ -35,15 +35,15 @@ Recipe Manager is a terminal based application.There will be two persons using t
 2.Dietician
   ##User
   In the application,when we switch to user,the user can perform the following tasks
-   * List all the weeks
-   * view aRecipies
-   * Generate a Recipe Week
-   * view Recipies
+    List all the weeks
+    view aRecipies
+    Generate a Recipe Week
+    view Recipies
   When we switch to dietician,he can perform these tasks
-    * Create a Recipie
-    * View Recipe
-    * Update Recipe
-    * view all Recipies
+     Create a Recipie
+     View Recipe
+     Update Recipe
+    view all Recipies
   
 
 Project setUp
