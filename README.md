@@ -12,7 +12,7 @@ Table of contents
 
 <!--ts-->
    * [About](#about)
-   * [Usage](#usage)
+   * [Project Setup](#project-setup)
       * [STDIN](#stdin)
       * [Local files](#local-files)
       * [Remote files](#remote-files)
