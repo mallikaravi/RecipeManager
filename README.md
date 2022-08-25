@@ -26,7 +26,9 @@ $ java -jar target/recipe-manager-0.0.1-jar-with-dependencies.jar
 About
 ============
 Recipe Manager is a terminal based application.There will be two persons using this application.
+
 They are:
+
 1.User
 2.Dietician
 
