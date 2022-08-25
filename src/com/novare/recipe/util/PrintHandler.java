@@ -10,8 +10,12 @@ public class PrintHandler {
 		System.out.println(); // on purpose to make a space between the title
 	}
 
-	public static void optionBackToMainMenu() {
+	public static void optionQuit() {
 		System.out.println("[0] Quit");
+	}
+
+	public static void optionBackToMainMenu() {
+		System.out.println("[0] Back");
 	}
 
 	public static void optionList(List<?> options) {

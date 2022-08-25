@@ -87,7 +87,11 @@ public class Recipe {
 	 * @return the steps
 	 */
 	public String getSteps() {
-		return steps;
+		return removeMoreSpaces(steps);
+	}
+
+	private String removeMoreSpaces(String steps) {
+		return steps.replaceAll("\\s{2,}", "\n");
 	}
 
 	/**
@@ -97,7 +101,6 @@ public class Recipe {
 		this.steps = steps;
 	}
 
-	
 	@Override
 	public int hashCode() {
 		return Objects.hash(name);
@@ -105,11 +108,11 @@ public class Recipe {
 
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof String) {
-			String name=(String)obj;
+		if (obj instanceof String) {
+			String name = (String) obj;
 			return this.name.equals(name);
 		}
-		Recipe recipe=(Recipe)obj;
+		Recipe recipe = (Recipe) obj;
 		return this.getName().equals(recipe.getName());
 	}
 
@@ -117,6 +120,5 @@ public class Recipe {
 	public String toString() {
 		return name.toUpperCase();
 	}
-	
 
 }

@@ -7,11 +7,10 @@ import com.novare.recipe.view.DieticianView;
 
 public class ViewRecipeMenuAction extends BaseMenuAction {
 
-	@Override
-	public void execute() throws Exception {
+	public ViewRecipeMenuAction() throws Exception {
 
 		DieticianServiceImpl model = new DieticianServiceImpl();
-		DieticianView view = new DieticianView();
+		DieticianView view = new DieticianView("View Recipe menu options:");
 		DieticianController controller = new DieticianController(model, view);
 		controller.requestUserInput(MenuContext.VIEW_RECIPE);
 

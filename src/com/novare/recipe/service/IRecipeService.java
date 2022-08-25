@@ -5,7 +5,6 @@ import java.util.List;
 import com.novare.recipe.model.Recipe;
 
 public interface IRecipeService {
-	List<String> getMenuOptions();
 
 	void handleOption(int selectedOption) throws Exception;
 

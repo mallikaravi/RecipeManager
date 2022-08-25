@@ -13,18 +13,16 @@ public class MainController extends BaseController {
 	@Override
 	public void requestUserInput(MenuContext context) throws Exception {
 		super.requestUserInput(context);
+		try {
+			int selectedOption = getView().getUserInput();
+			getModel().handleOption(selectedOption);
+		} catch (NumberFormatException | IndexOutOfBoundsException exception) {
+			getView().printInvalidOption();
+			getView().printUserRequest();
+			setMenuVisible(false);
+			requestUserInput(context);
+		}
 
-        String input = getUserTerminal().nextLine();
-        try {
-            int selectedOption = Integer.parseInt(input);
-            getModel().handleOption(selectedOption);
-        }
-        catch (NumberFormatException | IndexOutOfBoundsException exception) {
-            getView().printInvalidOption();
-            getView().printUserRequest();
-            requestUserInput(context);
-        }
-    
 	}
 
 }

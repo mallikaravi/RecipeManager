@@ -12,44 +12,39 @@ public class DieticianController extends BaseController {
 
 	private final IDieticianService model;
 	private final DieticianView view;
-	private Recipe recipeCache = new Recipe();;
+	private Recipe recipeCache;
 
 	public DieticianController(IDieticianService model, DieticianView view) {
 		super(model, view);
 		this.model = model;
 		this.view = view;
+		this.recipeCache = new Recipe();
 	}
 
 	@Override
 	public void requestUserInput(MenuContext context) throws Exception {
 		try {
-			if (context == MenuContext.CREATE_RECIPE) {
-				createRecipe();
-				getModel().handleOption(0);
-			} else if (context == MenuContext.VIEW_RECIPE) {
-				viewRecipe();
+			int selectedOption = 0;
+			switch (context) {
+			case CREATE_RECIPE -> createRecipe();
+			case VIEW_RECIPE -> displayRecipe();
+			case UPDATE_RECIPE -> updateRecipe();
+			case ALL_RECIPIES -> {
+				displayAllRecipes();
 				getView().waitForDecision();
-				getModel().handleOption(0);
-			} else if (context == MenuContext.UPDATE_RECIPE) {
-				updateRecipe();
-				getModel().handleOption(0);
-
-			} else if (context == MenuContext.ALL_RECIPIES) {
-				viewAllRecipes();
-				getModel().handleOption(0);
-
-			} else {
-				super.requestUserInput(context);
-				String input = getUserTerminal().nextLine();
-				int selectedOption = Integer.parseInt(input);
-				getModel().handleOption(selectedOption);
 			}
+			default -> {
+				super.requestUserInput(context);
+				selectedOption = getView().getUserInput();
+			}
+			}
+			getModel().handleOption(selectedOption);
 		} catch (IndexOutOfBoundsException | IllegalArgumentException exception) {
 			getView().printInvalidOption();
+			getView().printUserRequest();
+			setMenuVisible(false);
 			requestUserInput(context);
 		}
-		getView().printUserRequest();
-
 	}
 
 	@Override
@@ -74,6 +69,7 @@ public class DieticianController extends BaseController {
 		}
 		getModel().createRecipe(recipeCache);
 		getView().printSaveMessage();
+		getView().waitForDecision();
 	}
 
 	private void addIngredientsToRecipe() throws Exception {
@@ -87,27 +83,29 @@ public class DieticianController extends BaseController {
 		}
 	}
 
-	private void viewRecipe() throws Exception {
+	private void buildRecipeMenu() throws Exception {
 		List<Recipe> allRecipes = getModel().getAllRecipes();
 		getView().setMenuOptionsInRow(allRecipes);
-		int selection = getView().askUserToChooseRecipe();
-		if (selection > allRecipes.size()) {
-			throw new IndexOutOfBoundsException();
-		}
+		int selection = getView().getSelectedOptionFromMenu(allRecipes.size());
+		gotoMainMenu(selection);
 		recipeCache = allRecipes.get(selection - 1);
-		getView().printMessage("Recipe Name:" + recipeCache.getName() + "\n\nIngredients:"
-				+ recipeCache.getIngredients() + "\n\nSteps:" + recipeCache.getSteps());
+	}
+
+	private void displayRecipe() throws Exception {
+		buildRecipeMenu();
+
+		StringBuilder builder = new StringBuilder();
+		builder.append("Recipe Name: " + recipeCache.getName()).append("\n");
+		builder.append("Ingredients: " + recipeCache.getIngredients()).append("\n");
+		builder.append("Steps:\n" + recipeCache.getSteps());
+		getView().printMessage(builder.toString());
+		getView().waitForDecision();
 
 	}
 
 	private void updateRecipe() throws Exception {
-		List<Recipe> allRecipes = getModel().getAllRecipes();
-		getView().setMenuOptionsInRow(allRecipes);
-		int selection = getView().askUserToChooseRecipe();
-		if (selection > allRecipes.size()) {
-			throw new IndexOutOfBoundsException();
-		}
-		recipeCache = allRecipes.get(selection - 1);
+		buildRecipeMenu();
+
 		String askRecipeNameChange = getView().askRecipeNameChange();
 		if (!askRecipeNameChange.isEmpty()) {
 			recipeCache.setName(askRecipeNameChange);
@@ -119,6 +117,7 @@ public class DieticianController extends BaseController {
 		}
 		getModel().updateRecipe(recipeCache);
 		getView().printSaveMessage();
+		getView().waitForDecision();
 
 	}
 

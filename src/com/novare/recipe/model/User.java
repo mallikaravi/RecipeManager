@@ -13,23 +13,23 @@ import jakarta.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "User")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(propOrder = { "id", "name", "weekPlan" })
+@XmlType(propOrder = { "id", "name", "weeklyPlan" })
 public class User {
 	private int id;
 	private String name;
 	@XmlElementWrapper(name = "WeeklyPlans")
 	@XmlElement(name = "WeekPlan")
-	private List<WeekPlan> weekPlan = new ArrayList<>();
+	private List<WeekPlan> weeklyPlan = new ArrayList<>();
 
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(int id, String name, List<WeekPlan> weekPlan) {
+	public User(int id, String name, List<WeekPlan> weeklyPlan) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.weekPlan = weekPlan;
+		this.weeklyPlan = weeklyPlan;
 	}
 
 	/**
@@ -61,21 +61,21 @@ public class User {
 	}
 
 	/**
-	 * @return the weekPlan
+	 * @return the weeklyPlan
 	 */
-	public List<WeekPlan> getWeekPlan() {
-		return weekPlan;
+	public List<WeekPlan> getWeeklyPlan() {
+		return weeklyPlan;
 	}
 
 	/**
-	 * @param weekPlan the weekPlan to set
+	 * @param weeklyPlan the weeklyPlan to set
 	 */
 	public void addWeekPlan(WeekPlan weekPlan) {
-		this.weekPlan.add(weekPlan);
+		this.weeklyPlan.add(weekPlan);
 	}
 
 	public void removeWeekPlan(WeekPlan weekPlan) {
-		this.weekPlan.remove(weekPlan);
+		this.weeklyPlan.remove(weekPlan);
 	}
 
 	@Override

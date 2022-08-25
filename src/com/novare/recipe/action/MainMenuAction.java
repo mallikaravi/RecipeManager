@@ -6,10 +6,9 @@ import com.novare.recipe.view.MainView;
 
 public class MainMenuAction extends BaseMenuAction {
 
-	@Override
-	public void execute() throws Exception {
+	public MainMenuAction() throws Exception {
 		MainServiceImpl model = new MainServiceImpl();
-		MainView view = new MainView();
+		MainView view = new MainView("Main menu options:");
 		MainController controller = new MainController(model, view);
 		controller.requestUserInput(null);
 	}

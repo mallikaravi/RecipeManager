@@ -1,7 +1,6 @@
 package com.novare.recipe.controller;
 
 import java.util.List;
-import java.util.Scanner;
 
 import com.novare.recipe.model.Recipe;
 import com.novare.recipe.service.IRecipeService;
@@ -9,18 +8,35 @@ import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.BaseView;
 
 public abstract class BaseController {
-	private final Scanner scanner;
 	private final BaseView view;
 	private final IRecipeService model;
+	private boolean menuVisible;
 
 	public BaseController(IRecipeService model, BaseView view) {
-		this.scanner = new Scanner(System.in);
 		this.view = view;
 		this.model = model;
+		setMenuVisible(true);
 	}
 
-	protected Scanner getUserTerminal() {
-		return scanner;
+	public void requestUserInput(MenuContext context) throws Exception {
+		if (isMenuVisible()) {
+			getView().setMenuOptions(getView().getMenuOptions());
+			getView().printUserRequest();
+		}
+	}
+
+	/**
+	 * @return the menuVisible
+	 */
+	public boolean isMenuVisible() {
+		return menuVisible;
+	}
+
+	/**
+	 * @param menuVisible the menuVisible to set
+	 */
+	public void setMenuVisible(boolean menuVisible) {
+		this.menuVisible = menuVisible;
 	}
 
 	public BaseView getView() {
@@ -31,15 +47,15 @@ public abstract class BaseController {
 		return model;
 	}
 
-	public void requestUserInput(MenuContext context) throws Exception {
-		view.setMenuOptions(model.getMenuOptions());
-
+	protected void gotoMainMenu(int option) throws Exception {
+		if (option == 0) {
+			getModel().handleOption(option);
+		}
 	}
 
-	protected List<Recipe> viewAllRecipes() throws Exception {
+	protected List<Recipe> displayAllRecipes() throws Exception {
 		List<Recipe> allRecipes = getModel().getAllRecipes();
 		getView().setMenuOptionsInRow(allRecipes);
-
 		return allRecipes;
 	}
 }

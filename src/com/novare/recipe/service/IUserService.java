@@ -16,21 +16,6 @@ import com.novare.recipe.model.WeekPlan;
 public interface IUserService extends IRecipeService {
 
 	/**
-	 * This is the method to view the recipe
-	 * 
-	 * @return-Recipe
-	 */
-	Recipe viewRecipe(Recipe recipe);
-
-	
-	/**
-	 * This is the method to view the recipes of the week
-	 * 
-	 * @return-List of recipes
-	 */
-	List<Recipe> viewRecipeWeek();
-
-	/**
 	 * This is the method to generate the recipes of the week
 	 * 
 	 * @return-List of recipes

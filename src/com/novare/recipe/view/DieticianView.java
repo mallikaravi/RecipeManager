@@ -6,13 +6,20 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import com.novare.recipe.util.PrintHandler;
+
 public class DieticianView extends BaseView {
-	public DieticianView() {
-		super();
+	public DieticianView(String title) {
+		super(title);
 	}
 
-	public void setTitle(String title) {
-		System.out.println(title);
+	@Override
+	public List<String> getMenuOptions() {
+		return List.of("Create Recipe", "View Recipe", "Update Recipe", "All Recipes");
+	}
+
+	public void printNavigationMenu() {
+		PrintHandler.optionBackToMainMenu();
 	}
 
 	public String askRecipeName() throws IllegalArgumentException {
@@ -52,7 +59,7 @@ public class DieticianView extends BaseView {
 	}
 
 	public String askRecipeNameChange() {
-		System.out.print("Want to change the recipe name [Yes/No]:");
+		System.out.print("Want to change the recipe name [Yes/No] ?");
 		if (askConfirmationYesOrNo()) {
 			return askRecipeName();
 		}
@@ -60,7 +67,7 @@ public class DieticianView extends BaseView {
 	}
 
 	public String askRecipeStepChange() {
-		System.out.print("Want to change the recipe steps [Yes/No]?:");
+		System.out.print("Want to change the recipe steps [Yes/No] ?");
 		if (askConfirmationYesOrNo()) {
 			return askRecipeSteps();
 		}
@@ -68,7 +75,7 @@ public class DieticianView extends BaseView {
 	}
 
 	public List<Integer> askIngredientChange(List<?> ingredients) {
-		System.out.print("want to delete ingredient [Yes/No]");
+		System.out.print("Want to delete ingredient [Yes/No] ?");
 		if (askConfirmationYesOrNo()) {
 			setMenuOptionsInRow(ingredients);
 			return askIngredients();
@@ -78,7 +85,7 @@ public class DieticianView extends BaseView {
 	}
 
 	public boolean askIngredientAddition() {
-		System.out.print("Want to add ingredients [Yes/No]");
+		System.out.print("Want to add ingredients [Yes/No] ?");
 		return askConfirmationYesOrNo();
 	}
 

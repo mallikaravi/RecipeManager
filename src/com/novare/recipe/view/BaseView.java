@@ -8,19 +8,25 @@ import com.novare.recipe.util.PrintHandler;
 public abstract class BaseView {
 	private final Scanner scanner;
 
-	public BaseView() {
+	public BaseView(String title) {
 		this.scanner = new Scanner(System.in);
 		PrintHandler.clearScreen();
 		PrintHandler.appTitle();
+		setTitle(title);
 	}
 
-	public void setMenuOptions(List<?> menuOptions, boolean... index) {
-		if (index.length > 0) {
-			PrintHandler.optionListWithoutIndex(menuOptions);
-		} else {
-			PrintHandler.optionList(menuOptions);
-		}
-		printUserRequest();
+	public abstract List<String> getMenuOptions();
+
+	public abstract void printNavigationMenu();
+
+	public void setTitle(String title) {
+		System.out.println(title);
+	}
+
+	public void setMenuOptions(List<?> menuOptions) {
+		PrintHandler.optionList(menuOptions);
+		printNavigationMenu();
+
 	}
 
 	public void setMenuOptionsInRow(List<?> menuOptions) {
@@ -57,6 +63,7 @@ public abstract class BaseView {
 	}
 
 	public int askUserToChooseIndexFromList() {
+		printUserRequest();
 		String input = getUserTerminal().nextLine();
 		if (input.isEmpty()) {
 			throw new IllegalArgumentException();
@@ -69,20 +76,44 @@ public abstract class BaseView {
 	}
 
 	public void waitForDecision() {
-		setMenuOptions(List.of("[C] Continue", "[Q] Quit"), false);
-		String input = getUserTerminal().nextLine();
-		boolean isValid = input.equalsIgnoreCase("C") || input.equalsIgnoreCase("Q");
-		if (input.isEmpty() || !isValid) {
-			throw new IllegalArgumentException();
+		printMessage("");
+		printMessage("Options:");
+		printMessage("[C] Continue");
+		printMessage("[Q] Quit");
+		boolean wait = false;
+		while (!wait) {
+			String input = getUserTerminal().nextLine();
+			wait = input.equalsIgnoreCase("C") || input.equalsIgnoreCase("Q");
+			if (input.equalsIgnoreCase("Q")) {
+				printMessage("BYE !");
+				System.exit(0);
+			}
 		}
-		if (input.equalsIgnoreCase("Q")) {
-			printMessage("BYE !");
-			System.exit(0);
+
+	}
+
+	public int getUserInput() {
+		String input = getUserTerminal().nextLine();
+		try {
+			int selection = Integer.parseInt(input);
+			return selection;
+		} catch (Exception exception) {
+			printInvalidOption();
+			printUserRequest();
+			return getUserInput();
 		}
 	}
 
-	public int askUserToChooseRecipe() {
-		System.out.print("Choose a Recipe and press enter [e.g, 1]:");
-		return askUserToChooseIndexFromList();
+	public int getSelectedOptionFromMenu(int menuItems) {
+		try {
+			int selection = askUserToChooseIndexFromList();
+			if (selection < 0 || selection > menuItems) {
+				throw new ArrayIndexOutOfBoundsException();
+			}
+			return selection;
+		} catch (Exception exception) {
+			printInvalidOption();
+			return getSelectedOptionFromMenu(menuItems);
+		}
 	}
 }

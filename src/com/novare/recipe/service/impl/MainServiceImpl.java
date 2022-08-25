@@ -10,19 +10,17 @@ import com.novare.recipe.service.IRecipeService;
 public class MainServiceImpl implements IRecipeService {
 
 	@Override
-	public List<String> getMenuOptions() {
-		return List.of("User", "Dietician");
-	}
-
-	@Override
 	public void handleOption(int selectedOption) throws Exception {
 
 		switch (selectedOption) {
+		case 0 -> {
+			System.exit(0);
+		}
 		case 1 -> {
-			new UserMenuAction().execute();
+			new UserMenuAction();
 		}
 		case 2 -> {
-			new DieticianMenuAction().execute();
+			new DieticianMenuAction();
 		}
 
 		default -> throw new IndexOutOfBoundsException();

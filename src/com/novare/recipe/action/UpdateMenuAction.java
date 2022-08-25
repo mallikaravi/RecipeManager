@@ -6,12 +6,9 @@ import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.DieticianView;
 
 public class UpdateMenuAction extends BaseMenuAction {
-	@Override
-	public void execute() throws Exception {
-
+	public UpdateMenuAction() throws Exception {
 		DieticianServiceImpl model = new DieticianServiceImpl();
-		DieticianView view = new DieticianView();
-		view.setTitle("Update Recipe");
+		DieticianView view = new DieticianView("Update Recipe menu options:");
 		DieticianController controller = new DieticianController(model, view);
 		controller.requestUserInput(MenuContext.UPDATE_RECIPE);
 

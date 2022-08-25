@@ -1,19 +1,22 @@
 package com.novare.recipe.view;
 
+import java.util.List;
+
+import com.novare.recipe.util.PrintHandler;
+
 public class MainView extends BaseView {
 
-	public MainView() {
-		super();
-		System.out.println("Main menu options:");
+	public MainView(String title) {
+		super(title);
 	}
 
-	public void printInvalidOption() {
-		System.out.println("Invalid option");
+	@Override
+	public List<String> getMenuOptions() {
+		return List.of("User", "Dietician");
 	}
 
-	public void printUserRequest() {
-		System.out.print("Choose an option press enter: ");
+	public void printNavigationMenu() {
+		PrintHandler.optionQuit();
 	}
 
-	
 }

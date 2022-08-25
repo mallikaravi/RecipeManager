@@ -1,20 +1,22 @@
 package com.novare.recipe.view;
 
+import java.util.List;
+
+import com.novare.recipe.util.PrintHandler;
+
 public class UserView extends BaseView {
 
-	public UserView() {
-		super();
-		System.out.println("Main menu options:");
+	public UserView(String title) {
+		super(title);
 	}
 
-	public int askUserToChooseWeek() {
-//		System.out.print("Choose a Week and press enter [e.g, 1]:");
-		return askUserToChooseIndexFromList();
+	@Override
+	public List<String> getMenuOptions() {
+		return List.of("List Of My Weeks", "View Current Week Recipies", "View Recipes", "Generate New Week");
 	}
 
-	public int askUserToChooseDayPlan() {
-//		System.out.print("Choose a day plan and press enter [e.g, 1]:");
-		return askUserToChooseIndexFromList();
+	public void printNavigationMenu() {
+		PrintHandler.optionBackToMainMenu();
 	}
 
 	public boolean askGenerateNewWeek() {

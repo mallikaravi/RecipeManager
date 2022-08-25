@@ -1,6 +1,5 @@
 package com.novare.recipe.service.impl;
 
-import java.io.File;
 import java.nio.file.Paths;
 import java.util.List;
 
@@ -14,11 +13,9 @@ import com.novare.recipe.model.RecipePool;
 import com.novare.recipe.model.User;
 import com.novare.recipe.model.WeekPlan;
 import com.novare.recipe.service.IUserService;
+import com.novare.recipe.util.ServiceUtil;
 
-import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
-import jakarta.xml.bind.Marshaller;
-import jakarta.xml.bind.Unmarshaller;
 
 /**
  * This is the UserServiceImpl class which implements IUserService interface.It
@@ -28,24 +25,10 @@ import jakarta.xml.bind.Unmarshaller;
 public class UserServiceImpl implements IUserService {
 
 	@Override
-	public Recipe viewRecipe(Recipe recipe) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public List<Recipe> getAllRecipes() throws Exception {
-
-		JAXBContext jaxbContext = JAXBContext.newInstance(RecipePool.class);
-		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		RecipePool recipePool = (RecipePool) jaxbUnmarshaller.unmarshal(Paths.get("RecipePool.xml").toFile());
+		RecipePool recipePool = (RecipePool) ServiceUtil.getUnmarshaller(RecipePool.class)
+				.unmarshal(Paths.get("assets/RecipePool.xml").toFile());
 		return recipePool.getRecipes();
-	}
-
-	@Override
-	public List<Recipe> viewRecipeWeek() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
@@ -53,50 +36,39 @@ public class UserServiceImpl implements IUserService {
 		User user = getUser();
 		user.addWeekPlan(weeklyPlan);
 
-		JAXBContext jaxbContext = JAXBContext.newInstance(User.class);
-		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-		// Marshal the Recipepool list in file
-		jaxbMarshaller.marshal(user, Paths.get("UserPlan.xml").toFile());
+		ServiceUtil.getMarshaller(User.class).marshal(user, Paths.get("assets/UserPlan.xml").toFile());
 		return weeklyPlan;
 	}
 
 	@Override
 	public List<WeekPlan> getAllWeeks() throws Exception {
 		User user = getUser();
-		return user.getWeekPlan();
+		return user.getWeeklyPlan();
 	}
 
 	private User getUser() throws JAXBException {
-		JAXBContext jaxbContext = JAXBContext.newInstance(User.class);
-		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-
-		User user = (User) jaxbUnmarshaller.unmarshal(new File("UserPlan.xml"));
+		User user = (User) ServiceUtil.getUnmarshaller(User.class)
+				.unmarshal(Paths.get(("assets/UserPlan.xml")).toFile());
 		return user;
-	}
-
-	@Override
-	public List<String> getMenuOptions() {
-		return List.of("List Of My Weeks", "View Current Week Recipies", "View Recipes", "Generate New Week");
 	}
 
 	@Override
 	public void handleOption(int selectedOption) throws Exception {
 		switch (selectedOption) {
 		case 0 -> {
-			new MainMenuAction().execute();
+			new MainMenuAction();
 		}
 		case 1 -> {
-			new ListOfMyWeeksMenuAction().execute();
+			new ListOfMyWeeksMenuAction();
 		}
 		case 2 -> {
-			new ViewCurrentWeekRecipieMenuAction().execute();
+			new ViewCurrentWeekRecipieMenuAction();
 		}
 		case 3 -> {
-			new ViewRecipeMenuAction().execute();
+			new ViewRecipeMenuAction();
 		}
 		case 4 -> {
-			new GenerateNewWeekMenuAction().execute();
+			new GenerateNewWeekMenuAction();
 		}
 		default -> throw new IndexOutOfBoundsException();
 		}
