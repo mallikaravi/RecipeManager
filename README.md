@@ -11,7 +11,7 @@ Table of contents
 
 <!--ts-->
    * [About](#about)
-   * [Project Setup](#project setup)
+      * [Project Setup](#project setup)
       * [Technology](#technology)
       * [Define a simple Maven Build](#define a simple maven build)
       * [Dependencies](#dependencies)
@@ -98,7 +98,7 @@ pom.xml
 
 This is the simplest possible pom.xml file necessary to build a Java project. It includes the following details of the project configuration:
 
-1 .<modelVersion>. POM model version (always 4.0.0).
-2 .<groupId>. Group or organization that the project belongs to. Often expressed as an inverted domain name.
-3 .<artifactId>. Name to be given to the project’s library artifact (for example, the name of its JAR or WAR file).
-4. <version>. Version of the project that is being built.
+*<modelVersion>. POM model version (always 4.0.0).
+*<groupId>. Group or organization that the project belongs to. Often expressed as an inverted domain name.
+*<artifactId>. Name to be given to the project’s library artifact (for example, the name of its JAR or WAR file).
+* <version>. Version of the project that is being built.
