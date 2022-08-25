@@ -12,21 +12,26 @@ Table of contents
 <!--ts-->
    * [About](#about)
    * [Project setup](#project-setup)
-   * [Technology](#technology)
-   * [Simple MAven Build](#simple-maven-build)
-   * [Dependencies](#dependencies)
-      
+   *  [Implementation And Design](#implementation-and-design)
+      * [Technology](#technology)
+      * [Simple MAven Build](#simple-maven-build)
+      * [Dependencies](#dependencies)
+         * [Class Diagram](#class-diagram)
+         * [Usecase Diagram](#usecase-diagram)
+
 About
 ============
-Recipe Manager is a terminal based application.There will be two users in this application.
+Recipe Manager is a terminal based application.There will be two persons using this application.They are:
 1.user
 2.Dietician
-I this application,the dietician can create ,update and add the recipies to the pool.Where as,the user can list all the weeks and generate new recipe week.
+In this application,the dietician can create ,update and add the recipies to the pool.Where as,the user can list all the weeks and generate new recipe week.
 
 Project setUp
 ============
 First you’ll need to setup a Java project for Maven to build. 
 
+
+#Implementation and Design
 Technology
 ============
 The following technologies are used in designing and developing the Spotifoo application.
