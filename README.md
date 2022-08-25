@@ -13,16 +13,11 @@ Table of contents
 <!--ts-->
    * [About](#about)
    * [Project setup](#project-setup)
-   *  [Implementation And Design](#implementation-and-design)
+   * [Implementation And Design](#implementation-and-design)
       * [Technology](#technology)
       * [Define a Simple Maven Build](#define-a-simple-maven-build)
       * [Dependencies](#dependencies)
     * [Project Overview](#project-overview)  
-          * [Play Song](#play-song)
-          * [Filter By Artist](#filter-by-artist)
-          * [Filter By Album](#filter-by-album)
-          * [Filter By Genre](#filter-by-genre)
-          * [Search](#search)
          * [Class Diagram](#class-diagram)
          * [Usecase Diagram](#usecase-diagram)
 
