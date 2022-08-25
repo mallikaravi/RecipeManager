@@ -9,12 +9,15 @@ mvn clean package test
     ├──recipe-manager.jar
     
 #Run the Project
+
 $ java -jar target/recipe-manager-0.0.1-jar-with-dependencies.jar
 
 #Project
+
 This guide walks you through using Maven to build recipe manager project with java
 
 #Technologies Used
+
  The following technologies are used in designing and developing the Spotifoo application.
 
 1. Java – Coding language for implementing the Recipe Manager application
@@ -23,15 +26,18 @@ This guide walks you through using Maven to build recipe manager project with ja
 4.Install Maven
 
 #Project SetUp
+
 First you’ll need to setup a Java project for Maven to build. 
 
 #Define a simple Maven build
+
 1.You need to create a Maven project definition.
 2.Maven projects are defined with an XML file named pom.xml.
 3.Among other things, this file gives the project’s name, version, and dependencies that it has on external libraries.
 4.Create a file named pom.xml at the root of the project and give it the following contents:
 
 pom.xml
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 <modelVersion>4.0.0</modelVersion>
