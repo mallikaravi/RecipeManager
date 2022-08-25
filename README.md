@@ -112,4 +112,4 @@ This is the simplest possible pom.xml file necessary to build a Java project. It
 
 UseCase Diagram
 ============
-![](design/classdiagram.png)
+https://github.com/mallikaravi/recipe-manager/blob/main/design/UseCaseDiagram.png
