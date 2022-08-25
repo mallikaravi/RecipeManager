@@ -21,7 +21,6 @@ public class RecipePool implements Serializable {
 	private List<Recipe> pool = new ArrayList<>();
 
 	public RecipePool() {
-		this.pool=new ArrayList();
 	}
 
 	public List<Recipe> getRecipes() {
@@ -30,6 +29,10 @@ public class RecipePool implements Serializable {
 
 	public void addRecipe(Recipe recipe) {
 		this.pool.add(recipe);
+	}
+
+	public void removeRecipe(Recipe recipe) {
+		this.pool.remove(recipe);
 	}
 
 	@Override

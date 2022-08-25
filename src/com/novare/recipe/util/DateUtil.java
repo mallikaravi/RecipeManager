@@ -15,6 +15,7 @@ import java.util.Locale;
 public final class DateUtil {
 
 	private final static String DATE_FORMAT_PATTERN = "dd-MM-yyyy";
+	private final static String DATE_DAY_FORMAT_PATTERN = "EEEE yyyy-MM-dd";
 
 	public static LocalDate toLocalDate(Date date) {
 		return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
@@ -46,7 +47,7 @@ public final class DateUtil {
 	public static List<String> getWeekDays() {
 		List<String> weekDays = new ArrayList<>();
 		for (DayOfWeek dayOfWeek : DayOfWeek.values()) {
-			String format = String.format("%-9s {%-10s}", dayOfWeek.getDisplayName(TextStyle.FULL, Locale.getDefault()),
+			String format = String.format("%-9s %-10s", dayOfWeek.getDisplayName(TextStyle.FULL, Locale.getDefault()),
 					LocalDate.now().with(dayOfWeek));
 			weekDays.add(format);
 		}
@@ -55,6 +56,10 @@ public final class DateUtil {
 
 	public static LocalDate toDate(String dateAsString) throws ParseException {
 		return LocalDate.parse(dateAsString, DateTimeFormatter.ofPattern(DATE_FORMAT_PATTERN));
+	}
+	
+	public static LocalDate toDateWithDay(String dateAsString) throws ParseException {
+		return LocalDate.parse(dateAsString, DateTimeFormatter.ofPattern(DATE_DAY_FORMAT_PATTERN));
 	}
 
 	public static String toString(LocalDate date) throws ParseException {

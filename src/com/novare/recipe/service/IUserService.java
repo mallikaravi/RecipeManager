@@ -6,6 +6,7 @@ package com.novare.recipe.service;
 import java.util.List;
 
 import com.novare.recipe.model.Recipe;
+import com.novare.recipe.model.WeekPlan;
 
 /**
  * This is the interface of the User.It has all the actions that user performs
@@ -21,13 +22,7 @@ public interface IUserService extends IRecipeService {
 	 */
 	Recipe viewRecipe(Recipe recipe);
 
-	/**
-	 * This is the method to generate all the recipes
-	 * 
-	 * @return-List of recipes
-	 */
-	List<Recipe> getAllrecipes();
-
+	
 	/**
 	 * This is the method to view the recipes of the week
 	 * 
@@ -40,6 +35,8 @@ public interface IUserService extends IRecipeService {
 	 * 
 	 * @return-List of recipes
 	 */
-	List<Recipe> generateRecipeWeek();
+	WeekPlan  createRecipeWeek(WeekPlan weeklyPlan) throws Exception;
+	
+	List<WeekPlan> getAllWeeks()throws Exception;
 
 }

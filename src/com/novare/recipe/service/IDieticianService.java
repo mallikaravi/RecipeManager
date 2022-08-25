@@ -24,21 +24,7 @@ public interface IDieticianService extends IRecipeService {
 	 * 
 	 * @return-recipe
 	 */
-	Recipe updateRecipe(Recipe recipe);
-
-	/**
-	 * This is the method used to delete the recipe in the application
-	 * 
-	 * @return-true
-	 */
-	boolean deleteRecipe(Recipe recipe);
-
-	/**
-	 * This method is used to generate all the recipes
-	 * 
-	 * @return-list of recipes
-	 */
-	List<Recipe> getAllRecipes() throws Exception;
+	Recipe updateRecipe(Recipe recipe) throws Exception;
 
 	List<Ingredient> getAllIngredients() throws Exception;
 

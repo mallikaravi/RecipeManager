@@ -1,7 +1,9 @@
 package com.novare.recipe.controller;
 
+import java.util.List;
 import java.util.Scanner;
 
+import com.novare.recipe.model.Recipe;
 import com.novare.recipe.service.IRecipeService;
 import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.BaseView;
@@ -32,5 +34,12 @@ public abstract class BaseController {
 	public void requestUserInput(MenuContext context) throws Exception {
 		view.setMenuOptions(model.getMenuOptions());
 
+	}
+
+	protected List<Recipe> viewAllRecipes() throws Exception {
+		List<Recipe> allRecipes = getModel().getAllRecipes();
+		getView().setMenuOptionsInRow(allRecipes);
+
+		return allRecipes;
 	}
 }

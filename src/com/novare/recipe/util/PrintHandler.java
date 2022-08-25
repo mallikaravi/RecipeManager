@@ -14,18 +14,18 @@ public class PrintHandler {
 		System.out.println("[0] Quit");
 	}
 
-	public static void optionList(List<String> options) {
+	public static void optionList(List<?> options) {
 		for (int index = 0; index < options.size(); index++) {
 			int number = index + 1;
-			String label = options.get(index);
+			String label = options.get(index).toString();
 
 			System.out.println("[" + number + "] " + label);
 		}
 	}
 
-	public static void optionListWithoutIndex(List<String> options) {
-		for (String label : options) {
-			System.out.println(label);
+	public static void optionListWithoutIndex(List<?> options) {
+		for (Object label : options) {
+			System.out.println(label.toString());
 		}
 	}
 

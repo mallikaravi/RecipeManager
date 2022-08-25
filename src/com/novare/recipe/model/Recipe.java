@@ -2,6 +2,7 @@ package com.novare.recipe.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -96,9 +97,26 @@ public class Recipe {
 		this.steps = steps;
 	}
 
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof String) {
+			String name=(String)obj;
+			return this.name.equals(name);
+		}
+		Recipe recipe=(Recipe)obj;
+		return this.getName().equals(recipe.getName());
+	}
+
 	@Override
 	public String toString() {
 		return name.toUpperCase();
 	}
+	
 
 }

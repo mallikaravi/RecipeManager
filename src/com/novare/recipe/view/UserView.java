@@ -7,12 +7,18 @@ public class UserView extends BaseView {
 		System.out.println("Main menu options:");
 	}
 
-	public void printInvalidOption() {
-		System.out.println("Invalid option");
+	public int askUserToChooseWeek() {
+//		System.out.print("Choose a Week and press enter [e.g, 1]:");
+		return askUserToChooseIndexFromList();
 	}
 
-	public void printUserRequest() {
-		System.out.print("Choose an option press enter: ");
+	public int askUserToChooseDayPlan() {
+//		System.out.print("Choose a day plan and press enter [e.g, 1]:");
+		return askUserToChooseIndexFromList();
 	}
 
+	public boolean askGenerateNewWeek() {
+		System.out.print("Want to Generate a New week [Yes/No]:");
+		return askConfirmationYesOrNo();
+	}
 }

@@ -25,7 +25,7 @@ public class DieticianView extends BaseView {
 	}
 
 	public List<Integer> askIngredients() {
-		System.out.print("Choose an mulitple options and press enter [e.g, 1,2]: ");
+		System.out.print("Choose mulitple options and press enter [e.g, 1,2]: ");
 		String input = getUserTerminal().nextLine();
 		if (input.isEmpty()) {
 			throw new IllegalArgumentException();
@@ -51,32 +51,6 @@ public class DieticianView extends BaseView {
 		return input;
 	}
 
-	public int askUserToChooseRecipe() {
-		System.out.print("Choose a Recipe and press enter [e.g, 1]:");
-		String input = getUserTerminal().nextLine();
-		if (input.isEmpty()) {
-			throw new IllegalArgumentException();
-		}
-		try {
-			return Integer.parseInt(input);
-		} catch (NumberFormatException e) {
-			throw new IllegalArgumentException();
-		}
-	}
-
-	public void waitForDecision() {
-		setMenuOptions(List.of("[C] Continue", "[Q] Quit"), false);
-		String input = getUserTerminal().nextLine();
-		boolean isValid = input.equalsIgnoreCase("C") || input.equalsIgnoreCase("Q");
-		if (input.isEmpty() || !isValid) {
-			throw new IllegalArgumentException();
-		}
-		if (input.equalsIgnoreCase("Q")) {
-			printMessage("BYE !");
-			System.exit(0);
-		}
-	}
-
 	public String askRecipeNameChange() {
 		System.out.print("Want to change the recipe name [Yes/No]:");
 		if (askConfirmationYesOrNo()) {
@@ -94,7 +68,7 @@ public class DieticianView extends BaseView {
 	}
 
 	public List<Integer> askIngredientChange(List<?> ingredients) {
-		System.out.println("want to delete ingredient [Yes/No]");
+		System.out.print("want to delete ingredient [Yes/No]");
 		if (askConfirmationYesOrNo()) {
 			setMenuOptionsInRow(ingredients);
 			return askIngredients();
@@ -104,7 +78,7 @@ public class DieticianView extends BaseView {
 	}
 
 	public boolean askIngredientAddition() {
-		System.out.println("Want to add ingredients [Yes/No]");
+		System.out.print("Want to add ingredients [Yes/No]");
 		return askConfirmationYesOrNo();
 	}
 

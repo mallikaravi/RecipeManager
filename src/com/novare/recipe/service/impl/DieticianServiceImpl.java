@@ -40,15 +40,17 @@ public class DieticianServiceImpl implements IDieticianService {
 	}
 
 	@Override
-	public Recipe updateRecipe(Recipe recipe) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public Recipe updateRecipe(Recipe recipe) throws Exception {
+		RecipePool pool = getRecipePool();
+		pool.removeRecipe(recipe);
+		pool.addRecipe(recipe);
 
-	@Override
-	public boolean deleteRecipe(Recipe recipe) {
-		// TODO Auto-generated method stub
-		return false;
+		JAXBContext jaxbContext = JAXBContext.newInstance(RecipePool.class);
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+		// Marshal the Recipepool list in file
+		jaxbMarshaller.marshal(pool, Paths.get("RecipePool.xml").toFile());
+		return recipe;
 	}
 
 	@Override

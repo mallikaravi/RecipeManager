@@ -33,6 +33,11 @@ public class DieticianController extends BaseController {
 			} else if (context == MenuContext.UPDATE_RECIPE) {
 				updateRecipe();
 				getModel().handleOption(0);
+
+			} else if (context == MenuContext.ALL_RECIPIES) {
+				viewAllRecipes();
+				getModel().handleOption(0);
+
 			} else {
 				super.requestUserInput(context);
 				String input = getUserTerminal().nextLine();
@@ -103,14 +108,18 @@ public class DieticianController extends BaseController {
 			throw new IndexOutOfBoundsException();
 		}
 		recipeCache = allRecipes.get(selection - 1);
-		if (!getView().askRecipeNameChange().isEmpty()) {
-			recipeCache.setName(getView().askRecipeNameChange());
+		String askRecipeNameChange = getView().askRecipeNameChange();
+		if (!askRecipeNameChange.isEmpty()) {
+			recipeCache.setName(askRecipeNameChange);
 		}
 		updateRecipeIngredients();
-		if (!getView().askRecipeStepChange().isEmpty()) {
-			recipeCache.setName(getView().askRecipeNameChange());
+		String askRecipeStepChange = getView().askRecipeStepChange();
+		if (!askRecipeStepChange.isEmpty()) {
+			recipeCache.setSteps(askRecipeStepChange);
 		}
 		getModel().updateRecipe(recipeCache);
+		getView().printSaveMessage();
+
 	}
 
 	private void updateRecipeIngredients() throws Exception {
