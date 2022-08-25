@@ -14,7 +14,7 @@ Table of contents
    * [Project setup](#project-setup)
    *  [Implementation And Design](#implementation-and-design)
       * [Technology](#technology)
-      * [Simple MAven Build](#simple-maven-build)
+      * [Define a Simple Maven Build](#define-a-simple-maven-build)
       * [Dependencies](#dependencies)
          * [Class Diagram](#class-diagram)
          * [Usecase Diagram](#usecase-diagram)
@@ -32,6 +32,7 @@ First you’ll need to setup a Java project for Maven to build.
 
 
 #Implementation and Design
+
 Technology
 ============
 The following technologies are used in designing and developing the Spotifoo application.
