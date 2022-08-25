@@ -1,10 +1,11 @@
 # Recipemanager
 
-mvn clean package test
-
 ## Build and Generate the JAR file (compile the source code)
-    
+```bash
+mvn clean package test  
 $ java -jar target/recipe-manager-0.0.1-jar-with-dependencies.jar
+
+# Run the Recipe manager application, assets folder is included with xml files used in the project.
 
 Table of contents
 =================
@@ -16,15 +17,32 @@ Table of contents
       * [Technology](#technology)
       * [Define a Simple Maven Build](#define-a-simple-maven-build)
       * [Dependencies](#dependencies)
+    * [Project Overview](#project-overview)  
+          * [Play Song](#play-song)
+          * [Filter By Artist](#filter-by-artist)
+          * [Filter By Album](#filter-by-album)
+          * [Filter By Genre](#filter-by-genre)
+          * [Search](#search)
          * [Class Diagram](#class-diagram)
          * [Usecase Diagram](#usecase-diagram)
 
 About
 ============
 Recipe Manager is a terminal based application.There will be two persons using this application.They are:
-1.user
+1.User
 2.Dietician
-In this application,the dietician can create ,update and add the recipies to the pool.Where as,the user can list all the weeks and generate new recipe week.
+  ##User
+  In the application,when we switch to user,the user can perform the following tasks
+   * List all the weeks
+   * view aRecipies
+   * Generate a Recipe Week
+   * view Recipies
+  When we switch to dietician,he can perform these tasks
+    * Create a Recipie
+    * View Recipe
+    * Update Recipe
+    * view all Recipies
+  
 
 Project setUp
 ============
