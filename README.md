@@ -12,7 +12,7 @@ Table of contents
 
 <!--ts-->
    * [About](#about)
-   * [Project setup](#project-setup)
+   * [Project Setup](#project-setup)
    * [Implementation And Design](#implementation-and-design)
       * [Technology](#technology)
       * [Define a Simple Maven Build](#define-a-simple-maven-build)
@@ -20,6 +20,7 @@ Table of contents
     * [Project Overview](#project-overview)  
          * [Class Diagram](#class-diagram)
          * [Usecase Diagram](#usecase-diagram)
+<!--te-->
 
 About
 ============
