@@ -12,14 +12,15 @@ Table of contents
 
 <!--ts-->
    * [About](#about)
-   * [Project Setup](#project-setup)
+   * [Project Overview](#project-overview)
+      * [Play Song](#play-song)
+      * [Filter By Artist](#filter-by-artist)
+      * [Filter By Album](#filter-by-album)
+      * [Filter By Genre](#filter-by-genre)
+      * [Search](#search)
    * [Implementation And Design](#implementation-and-design)
-      * [Technology](#technology)
-      * [Define a Simple Maven Build](#define-a-simple-maven-build)
-      * [Dependencies](#dependencies)
-    * [Project Overview](#project-overview)  
-         * [Class Diagram](#class-diagram)
-         * [Usecase Diagram](#usecase-diagram)
+      * [Technologies](#technologies)
+        * [Class Diagram](#class-diagram)
 <!--te-->
 
 About
