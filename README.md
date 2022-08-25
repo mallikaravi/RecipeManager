@@ -3,13 +3,7 @@
 mvn clean package test
 
 ## Build and Generate the JAR file (compile the source code)
-.
-├── ...
-    ├──assets
-    ├──recipe-manager.jar
     
-#Run the Project
-
 $ java -jar target/recipe-manager-0.0.1-jar-with-dependencies.jar
 
 #Project
@@ -90,8 +84,8 @@ pom.xml
 </project>
 With the exception of the optional <packaging> element, this is the simplest possible pom.xml file necessary to build a Java project. It includes the following details of the project configuration:
 
-1.<modelVersion>. POM model version (always 4.0.0).
-2.<groupId>. Group or organization that the project belongs to. Often expressed as an inverted domain name.
-3.<artifactId>. Name to be given to the project’s library artifact (for example, the name of its JAR or WAR file).
-4.<version>. Version of the project that is being built.
+1 .<modelVersion>. POM model version (always 4.0.0).
+2 .<groupId>. Group or organization that the project belongs to. Often expressed as an inverted domain name.
+3 .<artifactId>. Name to be given to the project’s library artifact (for example, the name of its JAR or WAR file).
+4. <version>. Version of the project that is being built.
 
