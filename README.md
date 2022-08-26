@@ -21,6 +21,8 @@ $ java -jar target/recipe-manager-0.0.1.jar
         * [Dependencies](#dependencies)
         * [Class Diagram](#class-diagram)
         * [UseCase Diagram](#usecase-diagram)
+    * [Tool Used For Project Management](#tool-used-for-project-management)
+
         
 <!--te-->
 
@@ -138,5 +140,9 @@ UseCase Diagram
 ============
 https://github.com/mallikaravi/recipe-manager/blob/main/design/UseCaseDiagram.png
 
+
 Class Diagram
+============
+
+Tool used for project management
 ============
