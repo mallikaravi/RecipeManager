@@ -8,8 +8,13 @@ $ git clone https://github.com/mallikaravi/recipe-manager.git
 $ cd recipe-manager
 
 # Build and Generate the JAR file (compile the source code)
-$ mvn clean package install
+$ mvn clean package install 
 $ java -jar recipe-manager-0.0.1.jar  
+
+# How to genrate jar file from Eclipse IDE
+# Launch Eclipse IDE >
+   > Import porject from local drive
+   > Select pom.xml > Right Click > Run As > Run configuraions Dialog, Enter "clean package install" in Goals text box
 
 # Run the recipe manager application, assets folder and jar file should be in same path.
 .
