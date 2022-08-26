@@ -12,7 +12,7 @@ public class UserView extends BaseView {
 
 	@Override
 	public List<String> getMenuOptions() {
-		return List.of("List Of My Weeks", "View Current Week Recipies", "View Recipes", "Generate New Week");
+		return List.of("List Of My Weeks", "View Current Week Recipies", "View Recipies", "Generate New Week");
 	}
 
 	public void printNavigationMenu() {
