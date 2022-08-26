@@ -6,8 +6,11 @@
 $ mvn clean package test  
 $ java -jar target/recipe-manager-0.0.1.jar
 
-### Run the Recipe manager application, assets folder is included with xml files used in the project.
-
+# Run the recipe manager application, assets folder and jar file should be in same path.
+.
+├── ...
+    ├──asets
+    ├──recipemanager.jar
 ```
 # Table of Contents
 <!--ts-->
