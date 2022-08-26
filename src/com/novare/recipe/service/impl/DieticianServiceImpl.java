@@ -27,6 +27,7 @@ public class DieticianServiceImpl implements IDieticianService {
 	@Override
 	public Recipe createRecipe(Recipe recipe) throws Exception {
 		RecipePool pool = getRecipePool();
+		recipe.setId(pool.getRecipes().size());
 		pool.addRecipe(recipe);
 
 		ServiceUtil.getMarshaller(RecipePool.class).marshal(pool, Paths.get("assets/RecipePool.xml").toFile());

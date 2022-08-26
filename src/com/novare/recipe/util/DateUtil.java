@@ -15,7 +15,10 @@ import java.util.Locale;
 public final class DateUtil {
 
 	private final static String DATE_FORMAT_PATTERN = "dd-MM-yyyy";
-public final static String DATE_DAY_FORMAT_PATTERN = "EEEE yyyy-MM-dd";
+	private final static String DATE_DAY_FORMAT_PATTERN = "EEEE yyyy-MM-dd";
+
+	private DateUtil() {
+	}
 
 	public static LocalDate toLocalDate(Date date) {
 		return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());
@@ -57,7 +60,7 @@ public final static String DATE_DAY_FORMAT_PATTERN = "EEEE yyyy-MM-dd";
 	public static LocalDate toDate(String dateAsString) throws ParseException {
 		return LocalDate.parse(dateAsString, DateTimeFormatter.ofPattern(DATE_FORMAT_PATTERN));
 	}
-	
+
 	public static LocalDate toDateWithDay(String dateAsString) throws ParseException {
 		return LocalDate.parse(dateAsString, DateTimeFormatter.ofPattern(DATE_DAY_FORMAT_PATTERN));
 	}

@@ -8,6 +8,9 @@ import jakarta.xml.bind.Unmarshaller;
 
 public final class ServiceUtil {
 
+	private ServiceUtil() {
+	}
+
 	public static Marshaller getMarshaller(Class<?> className) throws JAXBException, PropertyException {
 		JAXBContext jaxbContext = JAXBContext.newInstance(className);
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
@@ -20,4 +23,5 @@ public final class ServiceUtil {
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		return jaxbUnmarshaller;
 	}
+
 }

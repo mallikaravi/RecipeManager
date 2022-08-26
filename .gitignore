@@ -62,3 +62,4 @@ src/com/novare/recipe/Demo.java
 recipe-manager.umlcd
 recipe-manager.umlcd
 *.umlcd
+*.~vsdx

@@ -91,7 +91,7 @@ public class Recipe {
 	}
 
 	private String removeMoreSpaces(String steps) {
-		return steps.replaceAll("\\s{2,}", "\n");
+		return steps==null? steps: steps.replaceAll("\\s{2,}", "\n");
 	}
 
 	/**
