@@ -32,14 +32,14 @@ They are:
 1.User
 2.Dietician
 
-  ##User
+  ## User
   In the application,when we switch to user,the user can perform the following tasks
     List all the weeks
     view aRecipies
     Generate a Recipe Week
     view Recipies
     
-   ##Dietician   
+   ## Dietician   
    In the application,when we switch to dietician,he can perform the following tasks
      Create a Recipie
      View Recipe
