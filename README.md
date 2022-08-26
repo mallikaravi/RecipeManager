@@ -147,10 +147,6 @@ Class Diagram
 Tool used for project management
 ============
 JIRA tool is used for this project
+### Link -
 
-### Roadmap: https://mallikaravi.atlassian.net/jira/software/projects/REC/boards/2/roadmap
-### Backlog- Epic:
-
-### Dietician: https://mallikaravi.atlassian.net/browse/REC-11
-### User:  https://mallikaravi.atlassian.net/browse/REC-21
 
