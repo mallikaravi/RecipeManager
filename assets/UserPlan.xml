@@ -4,12 +4,11 @@
 	<name>Ravi</name>
 	<WeeklyPlans>
 		<WeekPlan>
-			<weekName>WEEK 33</weekName>
+			<weekName>WEEK 30</weekName>
 			<DailyPlans>
 				<DayPlan>
 					<name>Monday</name>
 					<date>2022-08-24T13:29:22.496+02:00</date>
-
 					<Recipe>
 						<id>1</id>
 						<name>Italian Stuffed Chicken</name>
@@ -273,7 +272,7 @@
 			</DailyPlans>
 		</WeekPlan>
 		<WeekPlan>
-			<weekName>WEEK 34</weekName>
+			<weekName>WEEK 31</weekName>
 			<DailyPlans>
 				<DayPlan>
 					<name>Monday</name>
@@ -539,7 +538,7 @@
 			</DailyPlans>
 		</WeekPlan>
 		<WeekPlan>
-			<weekName>WEEK 35</weekName>
+			<weekName>WEEK 32</weekName>
 			<DailyPlans>
 				<DayPlan>
 					<name>Monday</name>
@@ -804,7 +803,7 @@
 			</DailyPlans>
 		</WeekPlan>
 		<WeekPlan>
-			<weekName>WEEK 36</weekName>
+			<weekName>WEEK 33</weekName>
 			<DailyPlans>
 				<DayPlan>
 					<name>Monday</name>
@@ -1069,7 +1068,94 @@
 				</DayPlan>
 			</DailyPlans>
 		</WeekPlan>
-			
+		<WeekPlan>
+			<weekName>WEEK 34</weekName>
+			<DailyPlans>
+				<DayPlan>
+					<name>Monday</name>
+					<date>2022-08-22T00:00:00+02:00</date>
+					<Recipe>
+						<id>5</id>
+						<name>Khao Soi</name>
+						<Ingredients>
+							<Ingredient>
+								<name>chicken</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>coconut milk</name>
+								<measurement>LTR</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>eggs</name>
+								<measurement>PC</measurement>
+								<amount>4.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>rice noodles cooked</name>
+								<measurement>kg</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>large onions</name>
+								<measurement>Pc</measurement>
+								<amount>3.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Cook thick coconut milk in a saucepan, stirring constantly, until it becomes very oily.
+			   2.Add half the onions and all the garlic and fry, stirring occasionally.
+			   3.Add chicken and cook, stirring constantly for a few minutes. Set aside.
+			   4.Mix chickpea flour with cold water to form a thin cream. Add thin coconut milk to the pan and when it comes to a boil stir in the chickpea flour mixture. Cook and stir constantly until it thickens a little.
+			   5.Add the chicken and onion mixture, and simmer 3-5 minutes.
+			   6.Stir in chilli oil and remove from the heat.
+			   7.Serve in a large bowl with noodles, sliced hard boiled eggs, raw onions, coriander and green chillies on the side.
+               </steps>
+					</Recipe>
+				</DayPlan>
+			</DailyPlans>
+		</WeekPlan>
+		<WeekPlan>
+			<weekName>WEEK 35</weekName>
+			<DailyPlans>
+				<DayPlan>
+					<name>Monday</name>
+					<date>2022-08-22T00:00:00+02:00</date>
+					<Recipe>
+						<id>3</id>
+						<name>Roesti and salad</name>
+						<Ingredients>
+							<Ingredient>
+								<name>potatoes</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>carrots</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>louki</name>
+								<measurement>pc</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>butter</name>
+								<measurement>kg</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1. Partially cook the potatoes in boiling, salted water for 8 minutes. Drain and allow it to cool.
+               2. Heat 1 Tbsp oil in a frying pan. Add the onion and cook gently for 1 minute.
+               3. Coarsely grate the potatoes, add the onion, season and mix well. Divide the potato mixture into 4 portions.
+               4. Heat 1/2 Tbsp of olive oil. Add 1 tsp butter in the frying pan until hot and sizzling. Add a potato portion to the pan, flatten and cook until golden in color.
+               5. To serve, place the roesti on a serving plate. Whisk together the dressing ingredients, toss into the salad and pile onto the roesti.
+               </steps>
+					</Recipe>
+				</DayPlan>
+			</DailyPlans>
+		</WeekPlan>
 	</WeeklyPlans>
-	
 </User>

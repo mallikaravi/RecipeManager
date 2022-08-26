@@ -7,22 +7,22 @@
 			<Ingredient>
 				<name>chopped olives or sundried tomatoes</name>
 				<measurement>PC</measurement>
-				<amount>2</amount>
+				<amount>2.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>full-fat soft cheese</name>
 				<measurement>KG</measurement>
-				<amount>2</amount>
+				<amount>2.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>skinless chicken breasts</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>ripe tomatoes</name>
 				<measurement>PC</measurement>
-				<amount>4</amount>
+				<amount>4.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Heat oven to 220C/fan 200C/gas 7. Beat the olives or sundried tomatoes, garlic and almost all the herbs into the cheese, then season. Cut a slit along the side of each chicken breast
@@ -37,12 +37,12 @@
 			<Ingredient>
 				<name>Meat</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>Semi cooked rice</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>curd</name>
@@ -52,7 +52,7 @@
 			<Ingredient>
 				<name>lemon juice</name>
 				<measurement>PC</measurement>
-				<amount>3</amount>
+				<amount>3.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Clean the meat. Now in a pan, add meat, salt, ginger garlic paste, red chilli powder, green chilli paste, sauteed brown onions, cardamom powder, cinnamon, cumin seeds, cloves, mace, mint leaves and lemon juice.
@@ -69,17 +69,17 @@
 			<Ingredient>
 				<name>potatoes</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>carrots</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>louki</name>
 				<measurement>pc</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>butter</name>
@@ -101,7 +101,7 @@
 			<Ingredient>
 				<name>cottage cheese</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>Tomatoes</name>
@@ -111,12 +111,12 @@
 			<Ingredient>
 				<name>coriander leaves</name>
 				<measurement>PC</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>bread</name>
 				<measurement>PC</measurement>
-				<amount>2</amount>
+				<amount>2.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Mash the paneer. Break the bread into small pieces or grate it.
@@ -132,17 +132,17 @@
 			<Ingredient>
 				<name>chicken</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>coconut milk</name>
 				<measurement>LTR</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>eggs</name>
 				<measurement>PC</measurement>
-				<amount>4</amount>
+				<amount>4.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>rice noodles cooked</name>
@@ -152,7 +152,7 @@
 			<Ingredient>
 				<name>large onions</name>
 				<measurement>Pc</measurement>
-				<amount>3</amount>
+				<amount>3.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Cook thick coconut milk in a saucepan, stirring constantly, until it becomes very oily.
@@ -176,12 +176,12 @@
 			<Ingredient>
 				<name>maida</name>
 				<measurement>PC</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>egg</name>
 				<measurement>PC</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>soda water</name>
@@ -191,7 +191,7 @@
 			<Ingredient>
 				<name>baking powder</name>
 				<measurement>Pc</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Clean the fish under running water, pat dry and roll it in flour and parsley, keep aside
@@ -213,17 +213,17 @@
 			<Ingredient>
 				<name>ginger garlic paste</name>
 				<measurement>PC</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>rosemary twigs with leaves</name>
 				<measurement>PC</measurement>
-				<amount>8</amount>
+				<amount>8.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>bay leaves</name>
 				<measurement>PC</measurement>
-				<amount>3</amount>
+				<amount>3.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Split the breast pieces and thwack them out to flatten the pieces.
@@ -247,17 +247,17 @@
 			<Ingredient>
 				<name>green chillies</name>
 				<measurement>PC</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>eggs</name>
 				<measurement>PC</measurement>
-				<amount>2</amount>
+				<amount>2.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>pepper powder</name>
 				<measurement>PC</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Wipe the chicken breasts and beat with a mallet or a knife to flatten. Cut each into two pieces.
@@ -276,12 +276,12 @@
 			<Ingredient>
 				<name>boneless chicken</name>
 				<measurement>KG</measurement>
-				<amount>1</amount>
+				<amount>1.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>green chillies</name>
 				<measurement>PC</measurement>
-				<amount>2</amount>
+				<amount>2.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>curd</name>
@@ -291,7 +291,7 @@
 			<Ingredient>
 				<name>tomatoes</name>
 				<measurement>PC</measurement>
-				<amount>4</amount>
+				<amount>4.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1..Heat 2 tsp of oil in a pan with butter.
@@ -314,7 +314,7 @@
 			<Ingredient>
 				<name>cheese</name>
 				<measurement>PC</measurement>
-				<amount>3</amount>
+				<amount>3.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>milk</name>
@@ -324,7 +324,7 @@
 			<Ingredient>
 				<name>maida</name>
 				<measurement>PC</measurement>
-				<amount>4</amount>
+				<amount>4.0</amount>
 			</Ingredient>
 		</Ingredients>
 		<steps>1.Mix all the ingredients together and keep stirring to avoid lumps.
@@ -386,7 +386,7 @@
 			<Ingredient>
 				<name>capscicum</name>
 				<measurement>PC</measurement>
-				<amount>3</amount>
+				<amount>3.0</amount>
 			</Ingredient>
 			<Ingredient>
 				<name>rice</name>
@@ -512,4 +512,26 @@
 		        4.Spinach dal is ready to serve.
                </steps>
 	</Recipe>
+
+	<Recipe>
+		<id>17</id>
+		<name>Idly</name>
+		<Ingredients>
+			<Ingredient>
+				<name>rice</name>
+				<measurement>KG</measurement>
+				<amount>0.1</amount>
+			</Ingredient>
+			<Ingredient>
+				<name>maida</name>
+				<measurement>PC</measurement>
+				<amount>1.0</amount>
+			</Ingredient>
+		</Ingredients>
+		<steps>1.Take idly batter and pour in the mould
+               2.put it on the stove and heat for 15 minutes
+               3.idly is hot to serve
+		</steps>
+	</Recipe>
+
 </RecipePool>

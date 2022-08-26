@@ -48,14 +48,18 @@ public class DieticianView extends BaseView {
 		StringBuilder steps = new StringBuilder();
 		System.out.println("Enter Steps and press enter [Type 'exit' to save the steps]:");
 
-		String input = "";
-		while (!input.equalsIgnoreCase("exit")) {
-			input = getUserTerminal().nextLine();
+		while (true) {
+			String input = getUserTerminal().nextLine();
+			if (input.equalsIgnoreCase("exit")) {
+				if (steps.toString().isEmpty()) {
+					printInvalidOption();
+					askRecipeSteps();
+				}
+				return steps.toString();
+			}
 			steps.append(input);
 			steps.append("\n");
 		}
-
-		return input;
 	}
 
 	public String askRecipeNameChange() {
