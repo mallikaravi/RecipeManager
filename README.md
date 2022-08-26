@@ -9,7 +9,9 @@ $ cd recipe-manager
 
 # Build and Generate the JAR file (compile the source code)
 $ mvn clean package  
-$ java -jar recipe-manager-0.0.1.jar
+$ cp target/recipe-manager-0.0.1.jar . (Optional, you can also run from target folder)
+$ java -jar target/recipe-manager-0.0.1.jar  # If you skip the above step ;)
+$ java -jar recipe-manager-0.0.1.jar  
 
 # Run the recipe manager application, assets folder and jar file should be in same path.
 .
