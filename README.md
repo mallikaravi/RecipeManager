@@ -88,6 +88,8 @@ https://github.com/mallikaravi/recipe-manager/blob/main/design/DesignDocument.pd
 
 ![](design/ClassDiagram.png)
 
+More Diagrams Ref: https://github.com/mallikaravi/recipe-manager/blob/main/design/UML-Diagrams.pdf
+
 Technology
 ============
 The following technologies are used in designing and developing the recipe manager application.
