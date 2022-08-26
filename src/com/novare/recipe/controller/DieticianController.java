@@ -10,14 +10,10 @@ import com.novare.recipe.view.DieticianView;
 
 public class DieticianController extends BaseController {
 
-	private final IDieticianService model;
-	private final DieticianView view;
 	private Recipe recipeCache;
 
 	public DieticianController(IDieticianService model, DieticianView view) {
 		super(model, view);
-		this.model = model;
-		this.view = view;
 		this.recipeCache = new Recipe();
 	}
 
@@ -49,12 +45,12 @@ public class DieticianController extends BaseController {
 
 	@Override
 	public IDieticianService getModel() {
-		return this.model;
+		return (IDieticianService) super.getModel();
 	}
 
 	@Override
 	public DieticianView getView() {
-		return this.view;
+		return (DieticianView) super.getView();
 	}
 
 	private void createRecipe() throws Exception {

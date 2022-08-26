@@ -14,23 +14,19 @@ import com.novare.recipe.view.UserView;
 
 public class UserController extends BaseController {
 
-	private final IUserService model;
-	private final UserView view;
 	private final WeekPlan weekPlan;
 
 	public UserController(IUserService model, UserView view) {
 		super(model, view);
-		this.model = model;
-		this.view = view;
 		this.weekPlan = new WeekPlan();
 	}
 
 	public IUserService getModel() {
-		return this.model;
+		return (IUserService) super.getModel();
 	}
 
 	public UserView getView() {
-		return this.view;
+		return (UserView) super.getView();
 	}
 
 	@Override
@@ -75,7 +71,7 @@ public class UserController extends BaseController {
 		}
 	}
 
-	public void displayMyWeeks() throws Exception {
+	private void displayMyWeeks() throws Exception {
 		List<WeekPlan> allWeeks = getModel().getAllWeeks();
 		getView().setMenuOptions(allWeeks);
 		int selection = getView().getSelectedOptionFromMenu(allWeeks.size());
@@ -99,7 +95,7 @@ public class UserController extends BaseController {
 		getView().waitForDecision();
 	}
 
-	public void displaySelectedRecipe() throws Exception {
+	private void displaySelectedRecipe() throws Exception {
 		List<Recipe> viewAllRecipes = displayAllRecipes();
 		int selection = getView().getSelectedOptionFromMenu(viewAllRecipes.size());
 		gotoMainMenu(selection);
@@ -114,7 +110,7 @@ public class UserController extends BaseController {
 		getView().waitForDecision();
 	}
 
-	public void generateNewWeek() throws Exception {
+	private void generateNewWeek() throws Exception {
 		DayPlan dayPlan = new DayPlan();
 		List<String> weekDays = new ArrayList<>();
 		for (String day : DateUtil.getWeekDays()) {

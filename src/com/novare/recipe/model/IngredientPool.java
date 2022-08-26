@@ -1,6 +1,5 @@
 package com.novare.recipe.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,11 +10,8 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name="IngredientPool")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class IngredientPool implements Serializable {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class IngredientPool {
+	
 	
 	@XmlElement(name="Ingredient")
 	private List<Ingredient> ingredientPool=new ArrayList<>();
