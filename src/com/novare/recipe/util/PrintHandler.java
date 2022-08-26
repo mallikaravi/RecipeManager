@@ -2,6 +2,11 @@ package com.novare.recipe.util;
 
 import java.util.List;
 
+/**
+ * This is Print Helper class for the View to print the information in console.
+ * @author malli
+ *
+ */
 public class PrintHandler {
 	public static void appTitle() {
 		System.out.println("** Welcome To Recipe Manager **");

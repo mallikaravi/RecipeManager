@@ -12,6 +12,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * This is Date helper class to convert the Date into different formats.
+ * @author malli
+ *
+ */
 public final class DateUtil {
 
 	private final static String DATE_FORMAT_PATTERN = "dd-MM-yyyy";

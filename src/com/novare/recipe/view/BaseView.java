@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 import com.novare.recipe.util.PrintHandler;
 
+/**
+ * @author malli
+ *
+ */
 public abstract class BaseView {
 	private final Scanner scanner;
 

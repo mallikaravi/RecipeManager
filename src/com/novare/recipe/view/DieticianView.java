@@ -8,6 +8,10 @@ import java.util.stream.Collectors;
 
 import com.novare.recipe.util.PrintHandler;
 
+/**
+ * @author malli
+ *
+ */
 public class DieticianView extends BaseView {
 	public DieticianView(String title) {
 		super(title);

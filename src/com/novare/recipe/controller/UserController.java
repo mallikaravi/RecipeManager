@@ -12,6 +12,18 @@ import com.novare.recipe.util.DateUtil;
 import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.UserView;
 
+/**
+ * This class extends base controller class
+ *
+ */
+/**
+ * @author malli
+ *
+ */
+/**
+ * @author malli
+ *
+ */
 public class UserController extends BaseController {
 
 	private final WeekPlan weekPlan;
@@ -29,6 +41,10 @@ public class UserController extends BaseController {
 		return (UserView) super.getView();
 	}
 
+	/**
+	 * this method is used to display all the options of the user
+	 *
+	 */
 	@Override
 	public void requestUserInput(MenuContext context) throws Exception {
 		try {
@@ -53,6 +69,10 @@ public class UserController extends BaseController {
 
 	}
 
+	/**
+	 * this method displays the current Week recipies
+	 * @throws Exception
+	 */
 	private void displayCurrentWeekRecipies() throws Exception {
 		int currentWeek = DateUtil.getWeekNumberNow();
 		List<WeekPlan> allWeeks = getModel().getAllWeeks();
@@ -71,6 +91,10 @@ public class UserController extends BaseController {
 		}
 	}
 
+	/**
+	 * this displays all the weeks in the recipe pool
+	 * @throws Exception
+	 */
 	private void displayMyWeeks() throws Exception {
 		List<WeekPlan> allWeeks = getModel().getAllWeeks();
 		getView().setMenuOptions(allWeeks);
@@ -80,6 +104,11 @@ public class UserController extends BaseController {
 		displayDailyPlan(weekPlan.getDailyPlan());
 	}
 
+	/**
+	 * This is used to display daily plan
+	 * @param dailyPlan
+	 * @throws Exception
+	 */
 	private void displayDailyPlan(List<DayPlan> dailyPlan) throws Exception {
 		getView().setMenuOptions(dailyPlan);
 		int selection = getView().getSelectedOptionFromMenu(dailyPlan.size());
@@ -95,6 +124,10 @@ public class UserController extends BaseController {
 		getView().waitForDecision();
 	}
 
+	/**
+	 * This method is used to display the selected recipe
+	 * @throws Exception
+	 */
 	private void displaySelectedRecipe() throws Exception {
 		List<Recipe> viewAllRecipes = displayAllRecipes();
 		int selection = getView().getSelectedOptionFromMenu(viewAllRecipes.size());
@@ -110,6 +143,10 @@ public class UserController extends BaseController {
 		getView().waitForDecision();
 	}
 
+	/**
+	 * This method is used to generate a new week.
+	 * @throws Exception
+	 */
 	private void generateNewWeek() throws Exception {
 		DayPlan dayPlan = new DayPlan();
 		List<String> weekDays = new ArrayList<>();

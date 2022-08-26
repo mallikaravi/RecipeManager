@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.novare.recipe.util.PrintHandler;
 
+/**
+ * @author malli
+ *
+ */
 public class UserView extends BaseView {
 
 	public UserView(String title) {

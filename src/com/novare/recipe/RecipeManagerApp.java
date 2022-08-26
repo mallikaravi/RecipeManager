@@ -2,6 +2,10 @@ package com.novare.recipe;
 
 import com.novare.recipe.action.MainMenuAction;
 
+/**
+ * This {@code RecipeMangerApp} is the main class of this application.
+ *
+ */
 public class RecipeManagerApp {
 
 	public static void main(String[] args) {

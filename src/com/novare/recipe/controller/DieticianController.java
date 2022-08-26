@@ -8,15 +8,31 @@ import com.novare.recipe.service.IDieticianService;
 import com.novare.recipe.util.MenuContext;
 import com.novare.recipe.view.DieticianView;
 
+/**
+ * This class extends BaseController class.
+ *
+ */
 public class DieticianController extends BaseController {
 
 	private Recipe recipeCache;
 
+	/**
+	 * this is the constructor where we are passing mpdel and view as arguments
+	 * 
+	 * @param model
+	 * @param view
+	 */
 	public DieticianController(IDieticianService model, DieticianView view) {
 		super(model, view);
 		this.recipeCache = new Recipe();
 	}
 
+	/**
+	 * This method is used to display the dietician actions in the menu.If we enter
+	 * the correct option,we are going to handle the action,otherwise it gives an
+	 * exception.
+	 *
+	 */
 	@Override
 	public void requestUserInput(MenuContext context) throws Exception {
 		try {
@@ -53,6 +69,12 @@ public class DieticianController extends BaseController {
 		return (DieticianView) super.getView();
 	}
 
+	/**
+	 * This is the create recipe,where we can create the recipe with the
+	 * name,ingredients and steps.
+	 * 
+	 * @throws Exception
+	 */
 	private void createRecipe() throws Exception {
 		if (recipeCache.getName() == null) {
 			recipeCache.setName(getView().askRecipeName());
@@ -68,6 +90,11 @@ public class DieticianController extends BaseController {
 		getView().waitForDecision();
 	}
 
+	/**
+	 * This method is used to add ingredients to the recipe.
+	 * 
+	 * @throws Exception
+	 */
 	private void addIngredientsToRecipe() throws Exception {
 		List<Ingredient> allIngredients = getModel().getAllIngredients();
 		getView().setMenuOptionsInRow(allIngredients);
@@ -79,6 +106,10 @@ public class DieticianController extends BaseController {
 		}
 	}
 
+	/**
+	 * This method is used to build the recipe menu in a row we can view the recipe.
+	 * @throws Exception
+	 */
 	private void buildRecipeMenu() throws Exception {
 		List<Recipe> allRecipes = getModel().getAllRecipes();
 		getView().setMenuOptionsInRow(allRecipes);
@@ -87,6 +118,10 @@ public class DieticianController extends BaseController {
 		recipeCache = allRecipes.get(selection - 1);
 	}
 
+	/**
+	 * This method displays the recipe
+	 * @throws Exception
+	 */
 	private void displayRecipe() throws Exception {
 		buildRecipeMenu();
 
@@ -99,6 +134,10 @@ public class DieticianController extends BaseController {
 
 	}
 
+	/**
+	 * this method is used to update the recipe in the recipe pool.
+	 * @throws Exception
+	 */
 	private void updateRecipe() throws Exception {
 		buildRecipeMenu();
 
