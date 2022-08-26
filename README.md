@@ -69,9 +69,9 @@ First you’ll need to setup a Java project for Maven to build.
 
 Implementation and Design
 ============
-Expalined here 
+Explained here 
 
-![](design/DesignDocument.pdf)
+https://github.com/mallikaravi/recipe-manager/blob/main/design/DesignDocument.pdf
 
 ### Usecase Diagram: 
 
@@ -127,6 +127,9 @@ JIRA tool is used for this project, mainly maintaining the recipe-manager applic
 - Sprint handling
 - etc.
 
-### Link - ![](design/jira-dashboard.pdf)
+### Link 
+https://github.com/mallikaravi/recipe-manager/blob/main/design/DesignDocument.pdf
+
+
 
 
