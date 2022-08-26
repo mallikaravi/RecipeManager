@@ -42,7 +42,8 @@ $ java -jar recipe-manager-0.0.1.jar
 Prerequisites
 ============
 ### - JDK 17.0.2
-### - Maven
+### - Maven [[Download](https://maven.apache.org/download.cgi) / [Install](https://maven.apache.org/install.html)]
+
 
 
 About
