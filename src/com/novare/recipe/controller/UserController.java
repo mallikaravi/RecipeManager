@@ -76,7 +76,7 @@ public class UserController extends BaseController {
 		getView().setMenuOptions(allWeeks);
 		int selection = getView().getSelectedOptionFromMenu(allWeeks.size());
 		gotoMainMenu(selection);
-		WeekPlan weekPlan = allWeeks.get(selection);
+		WeekPlan weekPlan = allWeeks.get(selection-1);
 		displayDailyPlan(weekPlan.getDailyPlan());
 	}
 
@@ -84,7 +84,7 @@ public class UserController extends BaseController {
 		getView().setMenuOptions(dailyPlan);
 		int selection = getView().getSelectedOptionFromMenu(dailyPlan.size());
 		gotoMainMenu(selection);
-		DayPlan dayPlan = dailyPlan.get(selection);
+		DayPlan dayPlan = dailyPlan.get(selection-1);
 		StringBuilder builder = new StringBuilder();
 		builder.append("Name: " + dayPlan.getName()).append("\n").append("Recipes:" + dayPlan.getRecipe());
 		builder.append("\n");
