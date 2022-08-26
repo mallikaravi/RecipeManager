@@ -5,7 +5,6 @@ package com.novare.recipe.service;
 
 import java.util.List;
 
-import com.novare.recipe.model.Recipe;
 import com.novare.recipe.model.WeekPlan;
 
 /**
@@ -22,6 +21,10 @@ public interface IUserService extends IRecipeService {
 	 */
 	WeekPlan  createRecipeWeek(WeekPlan weeklyPlan) throws Exception;
 	
+	/**
+	 * @This method is used to display all the weeks in the application
+	 * @throws Exception
+	 */
 	List<WeekPlan> getAllWeeks()throws Exception;
 
 }

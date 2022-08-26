@@ -15,7 +15,7 @@ import java.util.Locale;
 public final class DateUtil {
 
 	private final static String DATE_FORMAT_PATTERN = "dd-MM-yyyy";
-	private final static String DATE_DAY_FORMAT_PATTERN = "EEEE yyyy-MM-dd";
+public final static String DATE_DAY_FORMAT_PATTERN = "EEEE yyyy-MM-dd";
 
 	public static LocalDate toLocalDate(Date date) {
 		return LocalDate.ofInstant(date.toInstant(), ZoneId.systemDefault());

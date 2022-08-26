@@ -15,6 +15,7 @@ import jakarta.xml.bind.annotation.XmlType;
 public class DayPlan {
 
 	private String name;
+	
 
 	private Date date;
 	@XmlElement(name = "Recipe")

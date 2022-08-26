@@ -1,7 +1,5 @@
 package com.novare.recipe.util;
 
-import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 public class PrintHandler {
@@ -81,18 +79,5 @@ public class PrintHandler {
 		}
 	}
 
-	/**
-	 * Here message is displayed with symbols in desired format.I have used enums
-	 * for printing various messages including signs.
-	 * 
-	 * @param icon
-	 * @param message
-	 */
-	public static void log(String message) {
-		try {
-			PrintStream out = new PrintStream(System.out, true, "UTF-8");
-			out.println(message);
-		} catch (UnsupportedEncodingException e) {
-		}
-	}
+	
 }
