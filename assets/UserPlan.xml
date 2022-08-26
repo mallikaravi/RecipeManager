@@ -1075,6 +1075,156 @@
 					<name>Monday</name>
 					<date>2022-08-22T00:00:00+02:00</date>
 					<Recipe>
+						<id>1</id>
+						<name>Khao Soi</name>
+						<Ingredients>
+							<Ingredient>
+								<name>chicken</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>coconut milk</name>
+								<measurement>LTR</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>eggs</name>
+								<measurement>PC</measurement>
+								<amount>4.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>rice noodles cooked</name>
+								<measurement>kg</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>large onions</name>
+								<measurement>Pc</measurement>
+								<amount>3.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Cook thick coconut milk in a saucepan, stirring constantly, until it becomes very oily.
+			   2.Add half the onions and all the garlic and fry, stirring occasionally.
+			   3.Add chicken and cook, stirring constantly for a few minutes. Set aside.
+			   4.Mix chickpea flour with cold water to form a thin cream. Add thin coconut milk to the pan and when it comes to a boil stir in the chickpea flour mixture. Cook and stir constantly until it thickens a little.
+			   5.Add the chicken and onion mixture, and simmer 3-5 minutes.
+			   6.Stir in chilli oil and remove from the heat.
+			   7.Serve in a large bowl with noodles, sliced hard boiled eggs, raw onions, coriander and green chillies on the side.
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Tuesday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>2</id>
+						<name>Biryani</name>
+						<Ingredients>
+							<Ingredient>
+								<name>Meat</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>Semi cooked rice</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>curd</name>
+								<measurement>KG</measurement>
+								<amount>1.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>lemon juice</name>
+								<measurement>PC</measurement>
+								<amount>3.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Clean the meat. Now in a pan, add meat, salt, ginger garlic paste, red chilli powder, green chilli paste, sauteed brown onions, cardamom powder, cinnamon, cumin seeds, cloves, mace, mint leaves and lemon juice.
+               2.Mix all of these ingredients thoroughly together.
+               3.Add curd, clarified butter, semi-cooked rice, saffron, water and oil. Mix it well.
+               4.Now apply sticky dough on the sides of the pan.
+               5.Cover it with a lid and cook for about 25 minutes.6.Hyderabadi biryani is ready to eat. Garnish it with boiled eggs, sliced carrots, cucumbers and serve hot.
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Wednesday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>3</id>
+						<name>Roesti and salad</name>
+						<Ingredients>
+							<Ingredient>
+								<name>potatoes</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>carrots</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>louki</name>
+								<measurement>pc</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>butter</name>
+								<measurement>kg</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1. Partially cook the potatoes in boiling, salted water for 8 minutes. Drain and allow it to cool.
+               2. Heat 1 Tbsp oil in a frying pan. Add the onion and cook gently for 1 minute.
+               3. Coarsely grate the potatoes, add the onion, season and mix well. Divide the potato mixture into 4 portions.
+               4. Heat 1/2 Tbsp of olive oil. Add 1 tsp butter in the frying pan until hot and sizzling. Add a potato portion to the pan, flatten and cook until golden in color.
+               5. To serve, place the roesti on a serving plate. Whisk together the dressing ingredients, toss into the salad and pile onto the roesti.
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Thursday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>4</id>
+						<name>Paneer Steak</name>
+						<Ingredients>
+							<Ingredient>
+								<name>cottage cheese</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>Tomatoes</name>
+								<measurement>KG</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>coriander leaves</name>
+								<measurement>PC</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>bread</name>
+								<measurement>PC</measurement>
+								<amount>2.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Mash the paneer. Break the bread into small pieces or grate it.
+				2.Mix well together the paneer, salt, hara dhania, green chillies and bread.
+				3.Form into two round 'patties' and pan fry over high heat with the oil till brown on both sides.
+				4.Place on a baking sheet, cover decoratively with the cheese slices and place the tomato on top and grill till cheese is soft and maybe brown if you so desire.
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>friday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
 						<id>5</id>
 						<name>Khao Soi</name>
 						<Ingredients>
@@ -1114,6 +1264,85 @@
                </steps>
 					</Recipe>
 				</DayPlan>
+				<DayPlan>
+					<name>Saturday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>6</id>
+						<name>Batter fish</name>
+						<Ingredients>
+							<Ingredient>
+								<name>white firm flesh fish fillet</name>
+								<measurement>KG</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>maida</name>
+								<measurement>PC</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>egg</name>
+								<measurement>PC</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>soda water</name>
+								<measurement>LTR</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>baking powder</name>
+								<measurement>Pc</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Clean the fish under running water, pat dry and roll it in flour and parsley, keep aside
+		       2.For the batter, in a clean bowl whisk together soda water, baking powder, egg, flour and the seasoning into smooth consistency
+		       3.Heat the oil in wok/ deep pan
+		       4.Now dip each piece of fish in batter, coating them well and gently place them into hot oil.
+		       5.Fry on medium heat till golden6.Serve with a wedge of lemon, chips with salt and vinegar.
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Sunday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>7</id>
+						<name>Rosemary Chicken</name>
+						<Ingredients>
+							<Ingredient>
+								<name>boneless chicken</name>
+								<measurement>KG</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>ginger garlic paste</name>
+								<measurement>PC</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>rosemary twigs with leaves</name>
+								<measurement>PC</measurement>
+								<amount>8.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>bay leaves</name>
+								<measurement>PC</measurement>
+								<amount>3.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Split the breast pieces and thwack them out to flatten the pieces.
+		       2.Add rosemary twigs to marinate. Rub ginger-garlic paste, salt and lemon juice into the breast pieces. Let it rest for sometime.
+		       3.In the meanwhile, roast a few bay leaves in a pan, and then add oil till they crackle.
+		       4.Place the chicken breasts on high flame and grill on both sides.
+		       5.Crush some pepper on top add a little water and simmer for 20 minutes.
+		       6.Poke a fork to check if the chicken is cooked. If not let it simmer for some more time.
+		       7.Now add a bit of honey to caramelize the chicken, grill for a little while and serve hot.
+               </steps>
+					</Recipe>
+				</DayPlan>
 			</DailyPlans>
 		</WeekPlan>
 		<WeekPlan>
@@ -1121,41 +1350,266 @@
 			<DailyPlans>
 				<DayPlan>
 					<name>Monday</name>
-					<date>2022-08-22T00:00:00+02:00</date>
+					<date>2022-08-24T13:29:22.496+02:00</date>
 					<Recipe>
-						<id>3</id>
-						<name>Roesti and salad</name>
+						<id>1</id>
+						<name>Biryani</name>
 						<Ingredients>
 							<Ingredient>
-								<name>potatoes</name>
+								<name>Meat</name>
 								<measurement>KG</measurement>
 								<amount>1.0</amount>
 							</Ingredient>
 							<Ingredient>
-								<name>carrots</name>
+								<name>Semi cooked rice</name>
 								<measurement>KG</measurement>
 								<amount>1.0</amount>
 							</Ingredient>
 							<Ingredient>
-								<name>louki</name>
-								<measurement>pc</measurement>
-								<amount>1.0</amount>
+								<name>curd</name>
+								<measurement>KG</measurement>
+								<amount>1.5</amount>
 							</Ingredient>
 							<Ingredient>
-								<name>butter</name>
-								<measurement>kg</measurement>
-								<amount>0.5</amount>
+								<name>lemon juice</name>
+								<measurement>PC</measurement>
+								<amount>3.0</amount>
 							</Ingredient>
 						</Ingredients>
-						<steps>1. Partially cook the potatoes in boiling, salted water for 8 minutes. Drain and allow it to cool.
-               2. Heat 1 Tbsp oil in a frying pan. Add the onion and cook gently for 1 minute.
-               3. Coarsely grate the potatoes, add the onion, season and mix well. Divide the potato mixture into 4 portions.
-               4. Heat 1/2 Tbsp of olive oil. Add 1 tsp butter in the frying pan until hot and sizzling. Add a potato portion to the pan, flatten and cook until golden in color.
-               5. To serve, place the roesti on a serving plate. Whisk together the dressing ingredients, toss into the salad and pile onto the roesti.
+						<steps>1.Clean the meat. Now in a pan, add meat, salt, ginger garlic paste, red chilli powder, green chilli paste, sauteed brown onions, cardamom powder, cinnamon, cumin seeds, cloves, mace, mint leaves and lemon juice.
+               2.Mix all of these ingredients thoroughly together.
+               3.Add curd, clarified butter, semi-cooked rice, saffron, water and oil. Mix it well.
+               4.Now apply sticky dough on the sides of the pan.
+               5.Cover it with a lid and cook for about 25 minutes.6.Hyderabadi biryani is ready to eat. Garnish it with boiled eggs, sliced carrots, cucumbers and serve hot.
                </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Tuesday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>2</id>
+						<name>Italian Stuffed Chicken</name>
+						<Ingredients>
+							<Ingredient>
+								<name>chopped olives or sundried tomatoes</name>
+								<measurement>PC</measurement>
+								<amount>2.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>full-fat soft cheese</name>
+								<measurement>KG</measurement>
+								<amount>2.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>skinless chicken breasts</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>ripe tomatoes</name>
+								<measurement>PC</measurement>
+								<amount>4.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Heat oven to 220C/fan 200C/gas 7. Beat the olives or sundried tomatoes, garlic and almost all the herbs into the cheese, then season. Cut a slit along the side of each chicken breast
+               2.Stuff each breast with a quarter of the cheese mix, then press to close. Lift onto a greased baking tray. 
+               3.Roast for 20 mins until the chicken is golden around the edges and the tomatoes look a little shrivelled.
+               4.Serve with a green salad and crusty bread to mop up the juices.</steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>wednesday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>3</id>
+						<name>veg fried rice</name>
+						<Ingredients>
+							<Ingredient>
+								<name>vegetable oil</name>
+								<measurement>LTR</measurement>
+								<amount>0.01</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>cabbage</name>
+								<measurement>KG</measurement>
+								<amount>0.01</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>carrot</name>
+								<measurement>KG</measurement>
+								<amount>0.02</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>capscicum</name>
+								<measurement>PC</measurement>
+								<amount>3.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>rice</name>
+								<measurement>KG</measurement>
+								<amount>0.1</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Heat oil in a pan.
+		       2.Add ginger garlic paste to it, saute a little.
+		       3.Now add spring onion, carrot, cabbage and capsicum.
+		       4.Saute and cook them well together.
+		       5.Now add salt along with soy sauce and vinegar.
+		       6.Mix thoroughly till simmer and add cooked rice to the pan.
+		       7.Combine the mix with rice thoroughly.
+		       8.Serve your hot Veg Fried Rice in a bowl, garnished with coriander leaves.
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Thursday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>4</id>
+						<name>Butter Chicken</name>
+						<Ingredients>
+							<Ingredient>
+								<name>boneless chicken</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>green chillies</name>
+								<measurement>PC</measurement>
+								<amount>2.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>curd</name>
+								<measurement>LTR</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>tomatoes</name>
+								<measurement>PC</measurement>
+								<amount>4.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1..Heat 2 tsp of oil in a pan with butter.
+		       2.Add cloves, cinnamon stick, mace and cardamom. Saute and then add chopped tomatoes, garlic and ginger. Mix well and then grind well.
+		       3.In another pan, heat another two cubes of butter, along with ginger garlic paste.
+		       4.Add the tomato puree made from the mixture. Now add red chilli powder, kasuri methi, honey and finally the roasted chicken pieces. Let it simmer.
+		       5.Add green chilli, cardamom powder and cream. Mix well.
+		       6.Serve with a teaspoon of cream over..
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Friday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>5</id>
+						<name>Chicken Steak</name>
+						<Ingredients>
+							<Ingredient>
+								<name>boneless chicken</name>
+								<measurement>KG</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>green chillies</name>
+								<measurement>PC</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>eggs</name>
+								<measurement>PC</measurement>
+								<amount>2.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>pepper powder</name>
+								<measurement>PC</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Wipe the chicken breasts and beat with a mallet or a knife to flatten. Cut each into two pieces.
+		       2.Mix the chicken with the other ingredients, except oil.
+		       3.Put aside to marinate for 2 hours or so.
+		       4.Heat a non-stick pan or grill with a thin layer of oil.
+		       5.When hot, place as many pieces of chicken without them touching each other, turning over at once.
+		       6.If your dish is not big enough to take in all the pieces together, you may have to do them in two lots.
+		       7.Lower the heat and cook till tender and brown on both sides, turning when one side is done. Serve hot.
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Saturday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>6</id>
+						<name>Baked vegetables</name>
+						<Ingredients>
+							<Ingredient>
+								<name>Mixed vegetables</name>
+								<measurement>KG</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>cheese</name>
+								<measurement>PC</measurement>
+								<amount>3.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>milk</name>
+								<measurement>LTR</measurement>
+								<amount>0.5</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>maida</name>
+								<measurement>PC</measurement>
+								<amount>4.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Mix all the ingredients together and keep stirring to avoid lumps.
+		       2.Melt the butter add onions and stir-fry till they look glossy.
+		       3.Add the mixed vegetables and continue to stir-fry over high heat till vegetables look like they are coated with the butter.
+		       4.Take it off the heat and mix in the salt, pepper and white sauce.
+		       5.Transfer mixture into an oven proof serving dish.
+		       6.Sprinkle the cheese to cover the mixture, garnish with the tomato slices and bake in a pre-heated oven for half an hour, or till cheese is slightly brown..
+               </steps>
+					</Recipe>
+				</DayPlan>
+				<DayPlan>
+					<name>Sunday</name>
+					<date>2022-08-24T13:29:22.496+02:00</date>
+					<Recipe>
+						<id>7</id>
+						<name>chicken tandoori</name>
+						<Ingredients>
+							<Ingredient>
+								<name>chopped olives or sundried tomatoes</name>
+								<measurement>PC</measurement>
+								<amount>2.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>full-fat soft cheese</name>
+								<measurement>KG</measurement>
+								<amount>2.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>skinless chicken breasts</name>
+								<measurement>KG</measurement>
+								<amount>1.0</amount>
+							</Ingredient>
+							<Ingredient>
+								<name>ripe tomatoes</name>
+								<measurement>PC</measurement>
+								<amount>4.0</amount>
+							</Ingredient>
+						</Ingredients>
+						<steps>1.Heat oven to 220C/fan 200C/gas 7. Beat the olives or sundried tomatoes, garlic and almost all the herbs into the cheese, then season. Cut a slit along the side of each chicken breast
+               2.Stuff each breast with a quarter of the cheese mix, then press to close. Lift onto a greased baking tray. 
+               3.Roast for 20 mins until the chicken is golden around the edges and the tomatoes look a little shrivelled.
+               4.Serve with a green salad and crusty bread to mop up the juices.</steps>
 					</Recipe>
 				</DayPlan>
 			</DailyPlans>
 		</WeekPlan>
+
 	</WeeklyPlans>
 </User>

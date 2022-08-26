@@ -1,161 +1,161 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <RecipePool>
-	<Recipe>
-		<id>1</id>
-		<name>Italian Stuffed Chicken</name>
-		<Ingredients>
-			<Ingredient>
-				<name>chopped olives or sundried tomatoes</name>
-				<measurement>PC</measurement>
-				<amount>2.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>full-fat soft cheese</name>
-				<measurement>KG</measurement>
-				<amount>2.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>skinless chicken breasts</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>ripe tomatoes</name>
-				<measurement>PC</measurement>
-				<amount>4.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Heat oven to 220C/fan 200C/gas 7. Beat the olives or sundried tomatoes, garlic and almost all the herbs into the cheese, then season. Cut a slit along the side of each chicken breast
+    <Recipe>
+        <id>1</id>
+        <name>Italian Stuffed Chicken</name>
+        <Ingredients>
+            <Ingredient>
+                <name>chopped olives or sundried tomatoes</name>
+                <measurement>PC</measurement>
+                <amount>2.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>full-fat soft cheese</name>
+                <measurement>KG</measurement>
+                <amount>2.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>skinless chicken breasts</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>ripe tomatoes</name>
+                <measurement>PC</measurement>
+                <amount>4.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Heat oven to 220C/fan 200C/gas 7. Beat the olives or sundried tomatoes, garlic and almost all the herbs into the cheese, then season. Cut a slit along the side of each chicken breast
                2.Stuff each breast with a quarter of the cheese mix, then press to close. Lift onto a greased baking tray. 
                3.Roast for 20 mins until the chicken is golden around the edges and the tomatoes look a little shrivelled.
                4.Serve with a green salad and crusty bread to mop up the juices.</steps>
-	</Recipe>
-	<Recipe>
-		<id>2</id>
-		<name>Biryani</name>
-		<Ingredients>
-			<Ingredient>
-				<name>Meat</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>Semi cooked rice</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>curd</name>
-				<measurement>KG</measurement>
-				<amount>1.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>lemon juice</name>
-				<measurement>PC</measurement>
-				<amount>3.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Clean the meat. Now in a pan, add meat, salt, ginger garlic paste, red chilli powder, green chilli paste, sauteed brown onions, cardamom powder, cinnamon, cumin seeds, cloves, mace, mint leaves and lemon juice.
+    </Recipe>
+    <Recipe>
+        <id>2</id>
+        <name>Biryani</name>
+        <Ingredients>
+            <Ingredient>
+                <name>Meat</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Semi cooked rice</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>curd</name>
+                <measurement>KG</measurement>
+                <amount>1.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>lemon juice</name>
+                <measurement>PC</measurement>
+                <amount>3.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Clean the meat. Now in a pan, add meat, salt, ginger garlic paste, red chilli powder, green chilli paste, sauteed brown onions, cardamom powder, cinnamon, cumin seeds, cloves, mace, mint leaves and lemon juice.
                2.Mix all of these ingredients thoroughly together.
                3.Add curd, clarified butter, semi-cooked rice, saffron, water and oil. Mix it well.
                4.Now apply sticky dough on the sides of the pan.
                5.Cover it with a lid and cook for about 25 minutes.6.Hyderabadi biryani is ready to eat. Garnish it with boiled eggs, sliced carrots, cucumbers and serve hot.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>3</id>
-		<name>Roesti and salad</name>
-		<Ingredients>
-			<Ingredient>
-				<name>potatoes</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>carrots</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>louki</name>
-				<measurement>pc</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>butter</name>
-				<measurement>kg</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1. Partially cook the potatoes in boiling, salted water for 8 minutes. Drain and allow it to cool.
+    </Recipe>
+    <Recipe>
+        <id>3</id>
+        <name>Roesti and salad</name>
+        <Ingredients>
+            <Ingredient>
+                <name>potatoes</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>carrots</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>louki</name>
+                <measurement>pc</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>butter</name>
+                <measurement>kg</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1. Partially cook the potatoes in boiling, salted water for 8 minutes. Drain and allow it to cool.
                2. Heat 1 Tbsp oil in a frying pan. Add the onion and cook gently for 1 minute.
                3. Coarsely grate the potatoes, add the onion, season and mix well. Divide the potato mixture into 4 portions.
                4. Heat 1/2 Tbsp of olive oil. Add 1 tsp butter in the frying pan until hot and sizzling. Add a potato portion to the pan, flatten and cook until golden in color.
                5. To serve, place the roesti on a serving plate. Whisk together the dressing ingredients, toss into the salad and pile onto the roesti.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>4</id>
-		<name>Paneer Steak</name>
-		<Ingredients>
-			<Ingredient>
-				<name>cottage cheese</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>Tomatoes</name>
-				<measurement>KG</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>coriander leaves</name>
-				<measurement>PC</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>bread</name>
-				<measurement>PC</measurement>
-				<amount>2.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Mash the paneer. Break the bread into small pieces or grate it.
+    </Recipe>
+    <Recipe>
+        <id>4</id>
+        <name>Paneer Steak</name>
+        <Ingredients>
+            <Ingredient>
+                <name>cottage cheese</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Tomatoes</name>
+                <measurement>KG</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>coriander leaves</name>
+                <measurement>PC</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>bread</name>
+                <measurement>PC</measurement>
+                <amount>2.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Mash the paneer. Break the bread into small pieces or grate it.
 				2.Mix well together the paneer, salt, hara dhania, green chillies and bread.
 				3.Form into two round 'patties' and pan fry over high heat with the oil till brown on both sides.
 				4.Place on a baking sheet, cover decoratively with the cheese slices and place the tomato on top and grill till cheese is soft and maybe brown if you so desire.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>5</id>
-		<name>Khao Soi</name>
-		<Ingredients>
-			<Ingredient>
-				<name>chicken</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>coconut milk</name>
-				<measurement>LTR</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>eggs</name>
-				<measurement>PC</measurement>
-				<amount>4.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>rice noodles cooked</name>
-				<measurement>kg</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>large onions</name>
-				<measurement>Pc</measurement>
-				<amount>3.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Cook thick coconut milk in a saucepan, stirring constantly, until it becomes very oily.
+    </Recipe>
+    <Recipe>
+        <id>5</id>
+        <name>Khao Soi</name>
+        <Ingredients>
+            <Ingredient>
+                <name>chicken</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>coconut milk</name>
+                <measurement>LTR</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>eggs</name>
+                <measurement>PC</measurement>
+                <amount>4.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>rice noodles cooked</name>
+                <measurement>kg</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>large onions</name>
+                <measurement>Pc</measurement>
+                <amount>3.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Cook thick coconut milk in a saucepan, stirring constantly, until it becomes very oily.
 			   2.Add half the onions and all the garlic and fry, stirring occasionally.
 			   3.Add chicken and cook, stirring constantly for a few minutes. Set aside.
 			   4.Mix chickpea flour with cold water to form a thin cream. Add thin coconut milk to the pan and when it comes to a boil stir in the chickpea flour mixture. Cook and stir constantly until it thickens a little.
@@ -163,70 +163,70 @@
 			   6.Stir in chilli oil and remove from the heat.
 			   7.Serve in a large bowl with noodles, sliced hard boiled eggs, raw onions, coriander and green chillies on the side.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>6</id>
-		<name>Batter fish</name>
-		<Ingredients>
-			<Ingredient>
-				<name>white firm flesh fish fillet</name>
-				<measurement>KG</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>maida</name>
-				<measurement>PC</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>egg</name>
-				<measurement>PC</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>soda water</name>
-				<measurement>LTR</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>baking powder</name>
-				<measurement>Pc</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Clean the fish under running water, pat dry and roll it in flour and parsley, keep aside
+    </Recipe>
+    <Recipe>
+        <id>6</id>
+        <name>Batter fish</name>
+        <Ingredients>
+            <Ingredient>
+                <name>white firm flesh fish fillet</name>
+                <measurement>KG</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>maida</name>
+                <measurement>PC</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>egg</name>
+                <measurement>PC</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>soda water</name>
+                <measurement>LTR</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>baking powder</name>
+                <measurement>Pc</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Clean the fish under running water, pat dry and roll it in flour and parsley, keep aside
 		       2.For the batter, in a clean bowl whisk together soda water, baking powder, egg, flour and the seasoning into smooth consistency
 		       3.Heat the oil in wok/ deep pan
 		       4.Now dip each piece of fish in batter, coating them well and gently place them into hot oil.
 		       5.Fry on medium heat till golden6.Serve with a wedge of lemon, chips with salt and vinegar.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>7</id>
-		<name>Rosemary Chicken</name>
-		<Ingredients>
-			<Ingredient>
-				<name>boneless chicken</name>
-				<measurement>KG</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>ginger garlic paste</name>
-				<measurement>PC</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>rosemary twigs with leaves</name>
-				<measurement>PC</measurement>
-				<amount>8.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>bay leaves</name>
-				<measurement>PC</measurement>
-				<amount>3.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Split the breast pieces and thwack them out to flatten the pieces.
+    </Recipe>
+    <Recipe>
+        <id>7</id>
+        <name>Rosemary Chicken</name>
+        <Ingredients>
+            <Ingredient>
+                <name>boneless chicken</name>
+                <measurement>KG</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>ginger garlic paste</name>
+                <measurement>PC</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>rosemary twigs with leaves</name>
+                <measurement>PC</measurement>
+                <amount>8.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>bay leaves</name>
+                <measurement>PC</measurement>
+                <amount>3.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Split the breast pieces and thwack them out to flatten the pieces.
 		       2.Add rosemary twigs to marinate. Rub ginger-garlic paste, salt and lemon juice into the breast pieces. Let it rest for sometime.
 		       3.In the meanwhile, roast a few bay leaves in a pan, and then add oil till they crackle.
 		       4.Place the chicken breasts on high flame and grill on both sides.
@@ -234,33 +234,33 @@
 		       6.Poke a fork to check if the chicken is cooked. If not let it simmer for some more time.
 		       7.Now add a bit of honey to caramelize the chicken, grill for a little while and serve hot.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>8</id>
-		<name>Chicken Steak</name>
-		<Ingredients>
-			<Ingredient>
-				<name>boneless chicken</name>
-				<measurement>KG</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>green chillies</name>
-				<measurement>PC</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>eggs</name>
-				<measurement>PC</measurement>
-				<amount>2.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>pepper powder</name>
-				<measurement>PC</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Wipe the chicken breasts and beat with a mallet or a knife to flatten. Cut each into two pieces.
+    </Recipe>
+    <Recipe>
+        <id>8</id>
+        <name>Chicken Steak</name>
+        <Ingredients>
+            <Ingredient>
+                <name>boneless chicken</name>
+                <measurement>KG</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>green chillies</name>
+                <measurement>PC</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>eggs</name>
+                <measurement>PC</measurement>
+                <amount>2.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>pepper powder</name>
+                <measurement>PC</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Wipe the chicken breasts and beat with a mallet or a knife to flatten. Cut each into two pieces.
 		       2.Mix the chicken with the other ingredients, except oil.
 		       3.Put aside to marinate for 2 hours or so.
 		       4.Heat a non-stick pan or grill with a thin layer of oil.
@@ -268,94 +268,94 @@
 		       6.If your dish is not big enough to take in all the pieces together, you may have to do them in two lots.
 		       7.Lower the heat and cook till tender and brown on both sides, turning when one side is done. Serve hot.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>9</id>
-		<name>Butter Chicken</name>
-		<Ingredients>
-			<Ingredient>
-				<name>boneless chicken</name>
-				<measurement>KG</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>green chillies</name>
-				<measurement>PC</measurement>
-				<amount>2.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>curd</name>
-				<measurement>LTR</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>tomatoes</name>
-				<measurement>PC</measurement>
-				<amount>4.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1..Heat 2 tsp of oil in a pan with butter.
+    </Recipe>
+    <Recipe>
+        <id>9</id>
+        <name>Butter Chicken</name>
+        <Ingredients>
+            <Ingredient>
+                <name>boneless chicken</name>
+                <measurement>KG</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>green chillies</name>
+                <measurement>PC</measurement>
+                <amount>2.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>curd</name>
+                <measurement>LTR</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>tomatoes</name>
+                <measurement>PC</measurement>
+                <amount>4.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1..Heat 2 tsp of oil in a pan with butter.
 		       2.Add cloves, cinnamon stick, mace and cardamom. Saute and then add chopped tomatoes, garlic and ginger. Mix well and then grind well.
 		       3.In another pan, heat another two cubes of butter, along with ginger garlic paste.
 		       4.Add the tomato puree made from the mixture. Now add red chilli powder, kasuri methi, honey and finally the roasted chicken pieces. Let it simmer.
 		       5.Add green chilli, cardamom powder and cream. Mix well.
 		       6.Serve with a teaspoon of cream over..
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>10</id>
-		<name>Baked vegetables</name>
-		<Ingredients>
-			<Ingredient>
-				<name>Mixed vegetables</name>
-				<measurement>KG</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>cheese</name>
-				<measurement>PC</measurement>
-				<amount>3.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>milk</name>
-				<measurement>LTR</measurement>
-				<amount>0.5</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>maida</name>
-				<measurement>PC</measurement>
-				<amount>4.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Mix all the ingredients together and keep stirring to avoid lumps.
+    </Recipe>
+    <Recipe>
+        <id>10</id>
+        <name>Baked vegetables</name>
+        <Ingredients>
+            <Ingredient>
+                <name>Mixed vegetables</name>
+                <measurement>KG</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>cheese</name>
+                <measurement>PC</measurement>
+                <amount>3.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>milk</name>
+                <measurement>LTR</measurement>
+                <amount>0.5</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>maida</name>
+                <measurement>PC</measurement>
+                <amount>4.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Mix all the ingredients together and keep stirring to avoid lumps.
 		       2.Melt the butter add onions and stir-fry till they look glossy.
 		       3.Add the mixed vegetables and continue to stir-fry over high heat till vegetables look like they are coated with the butter.
 		       4.Take it off the heat and mix in the salt, pepper and white sauce.
 		       5.Transfer mixture into an oven proof serving dish.
 		       6.Sprinkle the cheese to cover the mixture, garnish with the tomato slices and bake in a pre-heated oven for half an hour, or till cheese is slightly brown..
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>11</id>
-		<name>Yorkshire Lamb Patties</name>
-		<Ingredients>
-			<Ingredient>
-				<name>vegetable oil</name>
-				<measurement>LTR</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>Horseradish sauce</name>
-				<measurement>KG</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>lamb minced</name>
-				<measurement>KG</measurement>
-				<amount>0.2</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.In a round mixing bowl, mix horseradish sauce and vegetable oil.
+    </Recipe>
+    <Recipe>
+        <id>11</id>
+        <name>Yorkshire Lamb Patties</name>
+        <Ingredients>
+            <Ingredient>
+                <name>vegetable oil</name>
+                <measurement>LTR</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Horseradish sauce</name>
+                <measurement>KG</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>lamb minced</name>
+                <measurement>KG</measurement>
+                <amount>0.2</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.In a round mixing bowl, mix horseradish sauce and vegetable oil.
 		       2.Whisk well.
 		       3.Add fried onions and coarsely chopped parsley
                4.Check seasoning.
@@ -363,38 +363,38 @@
                6.Make round patties of 50 grams each and cook on pan grill.
                7.Serve hot with mayonnaise dip and crisp salad.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>12</id>
-		<name>veg fried rice</name>
-		<Ingredients>
-			<Ingredient>
-				<name>vegetable oil</name>
-				<measurement>LTR</measurement>
-				<amount>0.01</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>cabbage</name>
-				<measurement>KG</measurement>
-				<amount>0.01</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>carrot</name>
-				<measurement>KG</measurement>
-				<amount>0.02</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>capscicum</name>
-				<measurement>PC</measurement>
-				<amount>3.0</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>rice</name>
-				<measurement>KG</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Heat oil in a pan.
+    </Recipe>
+    <Recipe>
+        <id>12</id>
+        <name>veg fried rice</name>
+        <Ingredients>
+            <Ingredient>
+                <name>vegetable oil</name>
+                <measurement>LTR</measurement>
+                <amount>0.01</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>cabbage</name>
+                <measurement>KG</measurement>
+                <amount>0.01</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>carrot</name>
+                <measurement>KG</measurement>
+                <amount>0.02</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>capscicum</name>
+                <measurement>PC</measurement>
+                <amount>3.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>rice</name>
+                <measurement>KG</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Heat oil in a pan.
 		       2.Add ginger garlic paste to it, saute a little.
 		       3.Now add spring onion, carrot, cabbage and capsicum.
 		       4.Saute and cook them well together.
@@ -403,28 +403,28 @@
 		       7.Combine the mix with rice thoroughly.
 		       8.Serve your hot Veg Fried Rice in a bowl, garnished with coriander leaves.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>13</id>
-		<name>Tamarind rice</name>
-		<Ingredients>
-			<Ingredient>
-				<name>vegetable oil</name>
-				<measurement>LTR</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>rice</name>
-				<measurement>KG</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>tamarind pulp</name>
-				<measurement>KG</measurement>
-				<amount>0.2</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Heat oil and roast peanuts along with both the dals.
+    </Recipe>
+    <Recipe>
+        <id>13</id>
+        <name>Tamarind rice</name>
+        <Ingredients>
+            <Ingredient>
+                <name>vegetable oil</name>
+                <measurement>LTR</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>rice</name>
+                <measurement>KG</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>tamarind pulp</name>
+                <measurement>KG</measurement>
+                <amount>0.2</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Heat oil and roast peanuts along with both the dals.
 		       2.Saute till the dals splutter and slightly coloured.
 		       3.Now add curry leaves and whole red chillies.
 		       4.Mix them well.
@@ -434,104 +434,122 @@
 		       8.Saute it well so the rice is completely mixed with the cooked gravy.
 		       9.Serve hot, garnished with a tamarind.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>14</id>
-		<name>Dosa</name>
-		<Ingredients>
-			<Ingredient>
-				<name>vegetable oil</name>
-				<measurement>LTR</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>rice</name>
-				<measurement>KG</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>Dosa Batter</name>
-				<measurement>KG</measurement>
-				<amount>0.2</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Heat stove and place pan on it.
+    </Recipe>
+    <Recipe>
+        <id>14</id>
+        <name>Dosa</name>
+        <Ingredients>
+            <Ingredient>
+                <name>vegetable oil</name>
+                <measurement>LTR</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>rice</name>
+                <measurement>KG</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Dosa Batter</name>
+                <measurement>KG</measurement>
+                <amount>0.2</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Heat stove and place pan on it.
 		        2.When the pan is hot,pour dosa flour and make it in dosa shape.
 		        3.After dosa is done,serve it hot.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>15</id>
-		<name>Brinjal curry</name>
-		<Ingredients>
-			<Ingredient>
-				<name>vegetable oil</name>
-				<measurement>LTR</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>Brinjals</name>
-				<measurement>KG</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>tomatoes</name>
-				<measurement>KG</measurement>
-				<amount>0.2</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Heat stove and place tawa on it.
+    </Recipe>
+    <Recipe>
+        <id>15</id>
+        <name>Brinjal curry</name>
+        <Ingredients>
+            <Ingredient>
+                <name>vegetable oil</name>
+                <measurement>LTR</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Brinjals</name>
+                <measurement>KG</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>tomatoes</name>
+                <measurement>KG</measurement>
+                <amount>0.2</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Heat stove and place tawa on it.
 		        2.When the tawa is hot,add onions and fry them.
 		        3.Add tomatoes and brinjals,when they are done add some chilli powder and salt
 		        4.Brinjal curry is served hot with rice.
                </steps>
-	</Recipe>
-	<Recipe>
-		<id>16</id>
-		<name>Spinach dal</name>
-		<Ingredients>
-			<Ingredient>
-				<name>vegetable oil</name>
-				<measurement>LTR</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>Spinach</name>
-				<measurement>KG</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>Toor dal</name>
-				<measurement>KG</measurement>
-				<amount>0.2</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Take a cooker and pressure cook dal for 3 whistles.
+    </Recipe>
+    <Recipe>
+        <id>16</id>
+        <name>Spinach dal</name>
+        <Ingredients>
+            <Ingredient>
+                <name>vegetable oil</name>
+                <measurement>LTR</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Spinach</name>
+                <measurement>KG</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>Toor dal</name>
+                <measurement>KG</measurement>
+                <amount>0.2</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Take a cooker and pressure cook dal for 3 whistles.
 		        2.When it is done,take a pan add garlic,onion,spinach and cook them.
 		        3.Later add dal to this mixture and bring it to boil
 		        4.Spinach dal is ready to serve.
                </steps>
-	</Recipe>
-
-	<Recipe>
-		<id>17</id>
-		<name>Idly</name>
-		<Ingredients>
-			<Ingredient>
-				<name>rice</name>
-				<measurement>KG</measurement>
-				<amount>0.1</amount>
-			</Ingredient>
-			<Ingredient>
-				<name>maida</name>
-				<measurement>PC</measurement>
-				<amount>1.0</amount>
-			</Ingredient>
-		</Ingredients>
-		<steps>1.Take idly batter and pour in the mould
+    </Recipe>
+    <Recipe>
+        <id>17</id>
+        <name>Idly</name>
+        <Ingredients>
+            <Ingredient>
+                <name>rice</name>
+                <measurement>KG</measurement>
+                <amount>0.1</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>maida</name>
+                <measurement>PC</measurement>
+                <amount>1.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Take idly batter and pour in the mould
                2.put it on the stove and heat for 15 minutes
                3.idly is hot to serve
 		</steps>
-	</Recipe>
-
+    </Recipe>
+    <Recipe>
+        <id>18</id>
+        <name>Paneer Butter Masala</name>
+        <Ingredients>
+            <Ingredient>
+                <name>cheese</name>
+                <measurement>PC</measurement>
+                <amount>3.0</amount>
+            </Ingredient>
+            <Ingredient>
+                <name>tomatoes</name>
+                <measurement>PC</measurement>
+                <amount>4.0</amount>
+            </Ingredient>
+        </Ingredients>
+        <steps>1.Heat oil and add onions ,tomatoes and cashews.
+2.After frying,cool the mixture and grind it to fine paste
+3.Later add panner cheese and serve hot with chapathi or rice.
+</steps>
+    </Recipe>
 </RecipePool>
