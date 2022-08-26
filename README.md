@@ -3,7 +3,7 @@
 
 ## Build and Generate the JAR file (compile the source code)
 ```bash
-mvn clean package test  
+$ mvn clean package test  
 $ java -jar target/recipe-manager-0.0.1.jar
 
 ### Run the Recipe manager application, assets folder is included with xml files used in the project.
