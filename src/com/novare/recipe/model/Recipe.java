@@ -91,7 +91,7 @@ public class Recipe {
 	}
 
 	private String removeMoreSpaces(String steps) {
-		return steps==null? steps: steps.replaceAll("\\s{2,}", "\n");
+		return steps == null ? steps : steps.replaceAll("\\s{2,}", "\n");
 	}
 
 	/**
@@ -103,7 +103,7 @@ public class Recipe {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(name);
+		return Objects.hash(id) + Objects.hash(name);
 	}
 
 	@Override
@@ -113,7 +113,7 @@ public class Recipe {
 			return this.name.equals(name);
 		}
 		Recipe recipe = (Recipe) obj;
-		return this.getName().equals(recipe.getName());
+		return this.getId() == recipe.getId();
 	}
 
 	@Override
