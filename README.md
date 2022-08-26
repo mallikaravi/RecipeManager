@@ -14,6 +14,7 @@ $ java -jar target/recipe-manager-0.0.1.jar
 ```
 # Table of Contents
 <!--ts-->
+   * [Prerequisites](#prerequisites)
    * [About](#about)
    * [Project SetUp](#project-setup)
    * [Implementation And Design](#implementation-and-design)
@@ -27,6 +28,9 @@ $ java -jar target/recipe-manager-0.0.1.jar
 <!--te-->
 
 
+Prerequisites
+============
+* Install Maven
 
 About
 ============
@@ -61,7 +65,7 @@ Implementation and Design
 
 Technology
 ============
-The following technologies are used in designing and developing the Spotifoo application.
+The following technologies are used in designing and developing the recipe manager application.
 
 1. Java – Coding language for implementing the Recipe Manager application
 2. Eclipse - IDE Purpose 
