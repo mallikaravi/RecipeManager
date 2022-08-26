@@ -69,7 +69,7 @@ The following technologies are used in designing and developing the recipe manag
 
 1. Java – Coding language for implementing the Recipe Manager application
 2. Eclipse - IDE Purpose 
-3. Visual Paradigm - UML Diagram tool
+3. Microsoft Visio - UML Diagram tool
 4.Install Maven
 
 Define a simple Maven Build
