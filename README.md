@@ -21,7 +21,7 @@ $ java -jar target/recipe-manager-0.0.1.jar
         * [Dependencies](#dependencies)
         * [Class Diagram](#class-diagram)
         * [UseCase Diagram](#usecase-diagram)
-    * [Tool Used For Project Management](#tool-used-for-project-management)
+   *  [Tool Used For Project Management](#tool-used-for-project-management)
 
         
 <!--te-->
@@ -146,3 +146,11 @@ Class Diagram
 
 Tool used for project management
 ============
+JIRA tool is used for this project
+
+### Roadmap: https://mallikaravi.atlassian.net/jira/software/projects/REC/boards/2/roadmap
+### Backlog- Epic:
+
+### Dietician: https://mallikaravi.atlassian.net/browse/REC-11
+### User:  https://mallikaravi.atlassian.net/browse/REC-21
+
