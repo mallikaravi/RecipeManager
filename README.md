@@ -13,7 +13,7 @@ $ java -jar recipe-manager-0.0.1.jar
 
 # How to generate a jar file from Eclipse IDE
 # launch Eclipse IDE >
-   > Import porject from local drive
+   > Import project from local drive
    > Select pom.xml > Right Click > Run As > Run configuraions Dialog, Enter "clean package install" in Goals text box 
    > Select Run button
 
